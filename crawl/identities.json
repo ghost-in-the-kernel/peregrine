@@ -1,0 +1,149 @@
+{
+  "tool": "suite-builder",
+  "ledgerVersion": 1,
+  "entities": [
+    {
+      "id": "type:/",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "HomePage",
+      "patterns": [
+        "/"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    },
+    {
+      "id": "type:/contact",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "ContactPage",
+      "patterns": [
+        "/contact"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    },
+    {
+      "id": "type:/accomplishments",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "AccomplishmentsPage",
+      "patterns": [
+        "/accomplishments"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    },
+    {
+      "id": "type:/cart",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "CartPage",
+      "patterns": [
+        "/cart"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    },
+    {
+      "id": "type:/who",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "WhoPage",
+      "patterns": [
+        "/who"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    },
+    {
+      "id": "type:/services",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "ServicesPage",
+      "patterns": [
+        "/services"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    },
+    {
+      "id": "type:/our-work",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "OurWorkPage",
+      "patterns": [
+        "/our-work"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    },
+    {
+      "id": "type:/blog",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "BlogPage",
+      "patterns": [
+        "/blog"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    },
+    {
+      "id": "type:/blog/*",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "ArticlePage",
+      "patterns": [
+        "/blog/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    },
+    {
+      "id": "type:/blog/tag/*",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "TagPage",
+      "patterns": [
+        "/blog/tag/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    },
+    {
+      "id": "type:/peregrines-8a",
+      "kind": "page-type",
+      "introducedAt": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882",
+      "cls": "Peregrines8aPage",
+      "patterns": [
+        "/peregrines-8a"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "f570d782e61f127e209df0d999a7c92fd4254c0fee77b223f211a26b2ac7a882"
+      }
+    }
+  ]
+}

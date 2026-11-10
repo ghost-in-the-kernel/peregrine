@@ -1,0 +1,4218 @@
+{
+  "version": 2,
+  "crawl": {
+    "file": "crawl/www.peregrineadvisors.com.crawl.json",
+    "sha256": "165a64a018348fdd98f47495f7d1a5448d488f16ec966a595c59b56a43ff1e4d"
+  },
+  "entities": {
+    "type:/": {
+      "kind": "type",
+      "why": "the start page: always a page type of its own, since every test starts there [rules: start-page]",
+      "facts": [
+        "page HomePage",
+        "page HomePage opens ()",
+        "page HomePage url-shapes /",
+        "page HomePage doors read, verify",
+        "page HomePage settles 100",
+        "page HomePage title is \"Peregrine Advisors\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/home/HomePage.java",
+          "line": 35,
+          "fact": "page HomePage",
+          "why": "the start page: always a page type of its own, since every test starts there [rules: start-page]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/home/HomePage.java",
+          "line": 54,
+          "fact": "page HomePage opens ()",
+          "why": "the start page: always a page type of its own, since every test starts there [rules: start-page]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/home/HomePage.java",
+          "line": 61,
+          "fact": "page HomePage url-shapes /",
+          "why": "the start page: always a page type of its own, since every test starts there [rules: start-page]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/home/HomePage.java",
+          "line": 35,
+          "fact": "page HomePage doors read, verify",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/home/HomePage.java",
+          "line": 91,
+          "fact": "page HomePage settles 100",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/home/HomePage.java",
+          "line": 41,
+          "fact": "page HomePage title is \"Peregrine Advisors\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "structure:/:main-region": {
+      "kind": "structure",
+      "why": "its page read shows a main region",
+      "facts": [
+        "page HomePage structure MAIN_REGION xpath //main | //*[@role='main']",
+        "page HomePage loaded-when MAIN_REGION"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/home/HomeElements.java",
+          "line": 21,
+          "fact": "page HomePage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "its page read shows a main region"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/home/HomePage.java",
+          "line": 45,
+          "fact": "page HomePage loaded-when MAIN_REGION",
+          "why": "its page read shows a main region; structure before copy"
+        }
+      ]
+    },
+    "type:/contact": {
+      "kind": "type",
+      "why": "no other page read is enough like it (the closest, /services, shares 83% of its layout and 0% of its headings) [rules: unlike-others]",
+      "facts": [
+        "page ContactPage",
+        "page ContactPage opens ()",
+        "page ContactPage url-shapes /contact",
+        "page ContactPage doors click, enter, read, verify, execute",
+        "page ContactPage settles 400",
+        "page ContactPage title is \"Contact — Peregrine Advisors\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactPage.java",
+          "line": 40,
+          "fact": "page ContactPage",
+          "why": "no other page read is enough like it (the closest, /services, shares 83% of its layout and 0% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactPage.java",
+          "line": 62,
+          "fact": "page ContactPage opens ()",
+          "why": "no other page read is enough like it (the closest, /services, shares 83% of its layout and 0% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactPage.java",
+          "line": 69,
+          "fact": "page ContactPage url-shapes /contact",
+          "why": "no other page read is enough like it (the closest, /services, shares 83% of its layout and 0% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactPage.java",
+          "line": 40,
+          "fact": "page ContactPage doors click, enter, read, verify, execute",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactPage.java",
+          "line": 100,
+          "fact": "page ContactPage settles 400",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactPage.java",
+          "line": 49,
+          "fact": "page ContactPage title is \"Contact — Peregrine Advisors\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "control:/contact:FIRST_NAME_INPUT": {
+      "kind": "control",
+      "why": "seen on /contact: text field \"First Name\"; the crawl trusts its locator (text field)",
+      "facts": [
+        "page ContactPage element FIRST_NAME_INPUT xpath //input[@name='fname']",
+        "page ContactPage enter firstName on FIRST_NAME_INPUT",
+        "page ContactPage clear clearFirstName on FIRST_NAME_INPUT"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactElements.java",
+          "line": 30,
+          "fact": "page ContactPage element FIRST_NAME_INPUT xpath //input[@name='fname']",
+          "why": "seen on /contact: text field \"First Name\"; the crawl trusts its locator (text field)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/actions/ContactEnterActions.java",
+          "line": 25,
+          "fact": "page ContactPage enter firstName on FIRST_NAME_INPUT",
+          "why": "seen on /contact: text field \"First Name\""
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/actions/ContactEnterActions.java",
+          "line": 31,
+          "fact": "page ContactPage clear clearFirstName on FIRST_NAME_INPUT",
+          "why": "seen on /contact: text field \"First Name\""
+        }
+      ]
+    },
+    "control:/contact:LAST_NAME_INPUT": {
+      "kind": "control",
+      "why": "seen on /contact: text field \"Last Name\"; the crawl trusts its locator (text field)",
+      "facts": [
+        "page ContactPage element LAST_NAME_INPUT xpath //input[@name='lname']",
+        "page ContactPage enter lastName on LAST_NAME_INPUT",
+        "page ContactPage clear clearLastName on LAST_NAME_INPUT"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactElements.java",
+          "line": 32,
+          "fact": "page ContactPage element LAST_NAME_INPUT xpath //input[@name='lname']",
+          "why": "seen on /contact: text field \"Last Name\"; the crawl trusts its locator (text field)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/actions/ContactEnterActions.java",
+          "line": 37,
+          "fact": "page ContactPage enter lastName on LAST_NAME_INPUT",
+          "why": "seen on /contact: text field \"Last Name\""
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/actions/ContactEnterActions.java",
+          "line": 43,
+          "fact": "page ContactPage clear clearLastName on LAST_NAME_INPUT",
+          "why": "seen on /contact: text field \"Last Name\""
+        }
+      ]
+    },
+    "control:/contact:EMAIL_INPUT": {
+      "kind": "control",
+      "why": "seen on /contact: email field \"Email\"; the crawl trusts its locator (email field)",
+      "facts": [
+        "page ContactPage element EMAIL_INPUT xpath //input[@id=//label[normalize-space()='Email(required)']/@for]",
+        "page ContactPage enter email on EMAIL_INPUT",
+        "page ContactPage clear clearEmail on EMAIL_INPUT"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactElements.java",
+          "line": 34,
+          "fact": "page ContactPage element EMAIL_INPUT xpath //input[@id=//label[normalize-space()='Email(required)']/@for]",
+          "why": "seen on /contact: email field \"Email\"; the crawl trusts its locator (email field)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/actions/ContactEnterActions.java",
+          "line": 49,
+          "fact": "page ContactPage enter email on EMAIL_INPUT",
+          "why": "seen on /contact: email field \"Email\""
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/actions/ContactEnterActions.java",
+          "line": 55,
+          "fact": "page ContactPage clear clearEmail on EMAIL_INPUT",
+          "why": "seen on /contact: email field \"Email\""
+        }
+      ]
+    },
+    "control:/contact:MESSAGE_INPUT": {
+      "kind": "control",
+      "why": "seen on /contact: text area \"Message\"; the crawl trusts its locator (text area)",
+      "facts": [
+        "page ContactPage element MESSAGE_INPUT xpath //textarea[@id=//label[normalize-space()='Message(required)']/@for]",
+        "page ContactPage enter message on MESSAGE_INPUT",
+        "page ContactPage clear clearMessage on MESSAGE_INPUT"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactElements.java",
+          "line": 36,
+          "fact": "page ContactPage element MESSAGE_INPUT xpath //textarea[@id=//label[normalize-space()='Message(required)']/@for]",
+          "why": "seen on /contact: text area \"Message\"; the crawl trusts its locator (text area)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/actions/ContactEnterActions.java",
+          "line": 61,
+          "fact": "page ContactPage enter message on MESSAGE_INPUT",
+          "why": "seen on /contact: text area \"Message\""
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/actions/ContactEnterActions.java",
+          "line": 67,
+          "fact": "page ContactPage clear clearMessage on MESSAGE_INPUT",
+          "why": "seen on /contact: text area \"Message\""
+        }
+      ]
+    },
+    "control:/contact:SEND_BUTTON": {
+      "kind": "control",
+      "why": "seen on /contact: button \"Send\"; the crawl trusts its locator (button)",
+      "facts": [
+        "page ContactPage element SEND_BUTTON role button \"Send\"",
+        "page ContactPage click send on SEND_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactElements.java",
+          "line": 38,
+          "fact": "page ContactPage element SEND_BUTTON role button \"Send\"",
+          "why": "seen on /contact: button \"Send\"; the crawl trusts its locator (button)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/actions/ContactClickActions.java",
+          "line": 26,
+          "fact": "page ContactPage click send on SEND_BUTTON",
+          "why": "seen on /contact: button \"Send\""
+        }
+      ]
+    },
+    "form:/contact:Name": {
+      "kind": "form",
+      "why": "the \"Name\" form the crawl saw; filled, never sent",
+      "facts": [
+        "page ContactPage task fillNameForm takes Name enters firstName, lastName, email, message",
+        "page ContactPage record Name firstName=\"Test First Name\" lastName=\"Test Last Name\" email=\"test@example.com\" message=\"A test from the suite: please ignore.\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactTasks.java",
+          "line": 27,
+          "fact": "page ContactPage task fillNameForm takes Name enters firstName, lastName, email, message",
+          "why": "the \"Name\" form the crawl saw; filled, never sent"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/Name.java",
+          "line": 14,
+          "fact": "page ContactPage record Name firstName=\"Test First Name\" lastName=\"Test Last Name\" email=\"test@example.com\" message=\"A test from the suite: please ignore.\"",
+          "why": "the \"Name\" form's fields in page order, each sample plausible for its kind"
+        }
+      ]
+    },
+    "structure:/contact:main-region": {
+      "kind": "structure",
+      "why": "its page read shows a main region",
+      "facts": [
+        "page ContactPage structure MAIN_REGION xpath //main | //*[@role='main']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactElements.java",
+          "line": 26,
+          "fact": "page ContactPage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "its page read shows a main region"
+        }
+      ]
+    },
+    "check:/contact:Name": {
+      "kind": "check",
+      "why": "every page of ContactPage the crawl read showed it (1 page); isLoaded() waits for the first 1 checks",
+      "facts": [
+        "page ContactPage loaded-when \"Name\"",
+        "page ContactPage check \"Name\" spelled \"Name\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactPage.java",
+          "line": 53,
+          "fact": "page ContactPage loaded-when \"Name\"",
+          "why": "every page of ContactPage the crawl read showed it (1 page); isLoaded() waits for the first 1 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/contact/ContactElements.java",
+          "line": 22,
+          "fact": "page ContactPage check \"Name\" spelled \"Name\"",
+          "why": "every page of ContactPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "type:/accomplishments": {
+      "kind": "type",
+      "why": "no other page read is enough like it (the closest, /services, shares 65% of its layout and 20% of its headings) [rules: unlike-others]",
+      "facts": [
+        "page AccomplishmentsPage",
+        "page AccomplishmentsPage opens ()",
+        "page AccomplishmentsPage url-shapes /accomplishments",
+        "page AccomplishmentsPage doors read, verify",
+        "page AccomplishmentsPage settles 400",
+        "page AccomplishmentsPage title is \"Accomplishments — Peregrine Advisors\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/accomplishments",
+          "snapshot": "crawl/pages/accomplishments.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsPage.java",
+          "line": 37,
+          "fact": "page AccomplishmentsPage",
+          "why": "no other page read is enough like it (the closest, /services, shares 65% of its layout and 20% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsPage.java",
+          "line": 57,
+          "fact": "page AccomplishmentsPage opens ()",
+          "why": "no other page read is enough like it (the closest, /services, shares 65% of its layout and 20% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsPage.java",
+          "line": 64,
+          "fact": "page AccomplishmentsPage url-shapes /accomplishments",
+          "why": "no other page read is enough like it (the closest, /services, shares 65% of its layout and 20% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsPage.java",
+          "line": 37,
+          "fact": "page AccomplishmentsPage doors read, verify",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsPage.java",
+          "line": 95,
+          "fact": "page AccomplishmentsPage settles 400",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsPage.java",
+          "line": 43,
+          "fact": "page AccomplishmentsPage title is \"Accomplishments — Peregrine Advisors\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "structure:/accomplishments:main-region": {
+      "kind": "structure",
+      "why": "its page read shows a main region",
+      "facts": [
+        "page AccomplishmentsPage structure MAIN_REGION xpath //main | //*[@role='main']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/accomplishments",
+          "snapshot": "crawl/pages/accomplishments.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsElements.java",
+          "line": 48,
+          "fact": "page AccomplishmentsPage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "its page read shows a main region"
+        }
+      ]
+    },
+    "check:/accomplishments:Our Recent Accomplishments": {
+      "kind": "check",
+      "why": "every page of AccomplishmentsPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page AccomplishmentsPage loaded-when \"Our Recent Accomplishments\"",
+        "page AccomplishmentsPage check \"Our Recent Accomplishments\" spelled \"Our Recent Accomplishments\" by role heading \"Our Recent Accomplishments\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/accomplishments",
+          "snapshot": "crawl/pages/accomplishments.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsPage.java",
+          "line": 47,
+          "fact": "page AccomplishmentsPage loaded-when \"Our Recent Accomplishments\"",
+          "why": "every page of AccomplishmentsPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsElements.java",
+          "line": 22,
+          "fact": "page AccomplishmentsPage check \"Our Recent Accomplishments\" spelled \"Our Recent Accomplishments\" by role heading \"Our Recent Accomplishments\"",
+          "why": "every page of AccomplishmentsPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/accomplishments:CxO Advisory": {
+      "kind": "check",
+      "why": "every page of AccomplishmentsPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page AccomplishmentsPage loaded-when \"CxO Advisory\"",
+        "page AccomplishmentsPage check \"CxO Advisory\" spelled \"CxO Advisory\" by role heading \"CxO Advisory\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/accomplishments",
+          "snapshot": "crawl/pages/accomplishments.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsPage.java",
+          "line": 47,
+          "fact": "page AccomplishmentsPage loaded-when \"CxO Advisory\"",
+          "why": "every page of AccomplishmentsPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsElements.java",
+          "line": 26,
+          "fact": "page AccomplishmentsPage check \"CxO Advisory\" spelled \"CxO Advisory\" by role heading \"CxO Advisory\"",
+          "why": "every page of AccomplishmentsPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/accomplishments:Data Strategy": {
+      "kind": "check",
+      "why": "every page of AccomplishmentsPage the crawl read showed it (1 page)",
+      "facts": [
+        "page AccomplishmentsPage check \"Data Strategy\" spelled \"Data Strategy\" by role heading \"Data Strategy\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/accomplishments",
+          "snapshot": "crawl/pages/accomplishments.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsElements.java",
+          "line": 30,
+          "fact": "page AccomplishmentsPage check \"Data Strategy\" spelled \"Data Strategy\" by role heading \"Data Strategy\"",
+          "why": "every page of AccomplishmentsPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/accomplishments:Data Governance": {
+      "kind": "check",
+      "why": "every page of AccomplishmentsPage the crawl read showed it (1 page)",
+      "facts": [
+        "page AccomplishmentsPage check \"Data Governance\" spelled \"Data Governance\" by role heading \"Data Governance\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/accomplishments",
+          "snapshot": "crawl/pages/accomplishments.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsElements.java",
+          "line": 34,
+          "fact": "page AccomplishmentsPage check \"Data Governance\" spelled \"Data Governance\" by role heading \"Data Governance\"",
+          "why": "every page of AccomplishmentsPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/accomplishments:Data Architecture": {
+      "kind": "check",
+      "why": "every page of AccomplishmentsPage the crawl read showed it (1 page)",
+      "facts": [
+        "page AccomplishmentsPage check \"Data Architecture\" spelled \"Data Architecture\" by role heading \"Data Architecture\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/accomplishments",
+          "snapshot": "crawl/pages/accomplishments.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsElements.java",
+          "line": 38,
+          "fact": "page AccomplishmentsPage check \"Data Architecture\" spelled \"Data Architecture\" by role heading \"Data Architecture\"",
+          "why": "every page of AccomplishmentsPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/accomplishments:Data Analytics": {
+      "kind": "check",
+      "why": "every page of AccomplishmentsPage the crawl read showed it (1 page)",
+      "facts": [
+        "page AccomplishmentsPage check \"Data Analytics\" spelled \"Data Analytics\" by role heading \"Data Analytics\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/accomplishments",
+          "snapshot": "crawl/pages/accomplishments.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/accomplishments/AccomplishmentsElements.java",
+          "line": 42,
+          "fact": "page AccomplishmentsPage check \"Data Analytics\" spelled \"Data Analytics\" by role heading \"Data Analytics\"",
+          "why": "every page of AccomplishmentsPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "type:/cart": {
+      "kind": "type",
+      "why": "no other page read is enough like it (the closest, /, shares 78% of its layout) [rules: unlike-others]",
+      "facts": [
+        "page CartPage",
+        "page CartPage opens ()",
+        "page CartPage url-shapes /cart",
+        "page CartPage doors read, verify",
+        "page CartPage settles 400",
+        "page CartPage title is \"Peregrine Advisors\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/cart",
+          "snapshot": "crawl/pages/cart.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/cart/CartPage.java",
+          "line": 35,
+          "fact": "page CartPage",
+          "why": "no other page read is enough like it (the closest, /, shares 78% of its layout) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/cart/CartPage.java",
+          "line": 54,
+          "fact": "page CartPage opens ()",
+          "why": "no other page read is enough like it (the closest, /, shares 78% of its layout) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/cart/CartPage.java",
+          "line": 61,
+          "fact": "page CartPage url-shapes /cart",
+          "why": "no other page read is enough like it (the closest, /, shares 78% of its layout) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/cart/CartPage.java",
+          "line": 35,
+          "fact": "page CartPage doors read, verify",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/cart/CartPage.java",
+          "line": 91,
+          "fact": "page CartPage settles 400",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/cart/CartPage.java",
+          "line": 41,
+          "fact": "page CartPage title is \"Peregrine Advisors\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "structure:/cart:main-region": {
+      "kind": "structure",
+      "why": "its page read shows a main region",
+      "facts": [
+        "page CartPage structure MAIN_REGION xpath //main | //*[@role='main']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/cart",
+          "snapshot": "crawl/pages/cart.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/cart/CartElements.java",
+          "line": 28,
+          "fact": "page CartPage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "its page read shows a main region"
+        }
+      ]
+    },
+    "check:/cart:Shopping Cart": {
+      "kind": "check",
+      "why": "every page of CartPage the crawl read showed it (1 page); isLoaded() waits for the first 1 checks",
+      "facts": [
+        "page CartPage loaded-when \"Shopping Cart\"",
+        "page CartPage check \"Shopping Cart\" spelled \"Shopping Cart\" by role heading \"Shopping Cart\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/cart",
+          "snapshot": "crawl/pages/cart.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/cart/CartPage.java",
+          "line": 45,
+          "fact": "page CartPage loaded-when \"Shopping Cart\"",
+          "why": "every page of CartPage the crawl read showed it (1 page); isLoaded() waits for the first 1 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/cart/CartElements.java",
+          "line": 22,
+          "fact": "page CartPage check \"Shopping Cart\" spelled \"Shopping Cart\" by role heading \"Shopping Cart\"",
+          "why": "every page of CartPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "type:/who": {
+      "kind": "type",
+      "why": "no other page read is enough like it (the closest, /, shares 79% of its layout) [rules: unlike-others]",
+      "facts": [
+        "page WhoPage",
+        "page WhoPage opens ()",
+        "page WhoPage url-shapes /who",
+        "page WhoPage doors click, read, verify",
+        "page WhoPage settles 400",
+        "page WhoPage title is \"Who We Are — Peregrine Advisors\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/who",
+          "snapshot": "crawl/pages/who.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoPage.java",
+          "line": 41,
+          "fact": "page WhoPage",
+          "why": "no other page read is enough like it (the closest, /, shares 79% of its layout) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoPage.java",
+          "line": 62,
+          "fact": "page WhoPage opens ()",
+          "why": "no other page read is enough like it (the closest, /, shares 79% of its layout) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoPage.java",
+          "line": 69,
+          "fact": "page WhoPage url-shapes /who",
+          "why": "no other page read is enough like it (the closest, /, shares 79% of its layout) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoPage.java",
+          "line": 41,
+          "fact": "page WhoPage doors click, read, verify",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoPage.java",
+          "line": 99,
+          "fact": "page WhoPage settles 400",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoPage.java",
+          "line": 48,
+          "fact": "page WhoPage title is \"Who We Are — Peregrine Advisors\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "structure:/who:main-region": {
+      "kind": "structure",
+      "why": "its page read shows a main region",
+      "facts": [
+        "page WhoPage structure MAIN_REGION xpath //main | //*[@role='main']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/who",
+          "snapshot": "crawl/pages/who.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoElements.java",
+          "line": 43,
+          "fact": "page WhoPage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "its page read shows a main region"
+        }
+      ]
+    },
+    "check:/who:SBA (8a) Certified Leading AI, Data Science, and Strategy Firm": {
+      "kind": "check",
+      "why": "every page of WhoPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page WhoPage loaded-when \"SBA (8a) Certified Leading AI, Data Science, and Strategy Firm\"",
+        "page WhoPage check \"SBA (8a) Certified Leading AI, Data Science, and Strategy Firm\" spelled \"SBA (8a) Certified Leading AI, Data Science, and Strategy Firm\" by role heading \"SBA (8a) Certified Leading AI, Data Science, and Strategy Firm\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/who",
+          "snapshot": "crawl/pages/who.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoPage.java",
+          "line": 52,
+          "fact": "page WhoPage loaded-when \"SBA (8a) Certified Leading AI, Data Science, and Strategy Firm\"",
+          "why": "every page of WhoPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoElements.java",
+          "line": 25,
+          "fact": "page WhoPage check \"SBA (8a) Certified Leading AI, Data Science, and Strategy Firm\" spelled \"SBA (8a) Certified Leading AI, Data Science, and Strategy Firm\" by role heading \"SBA (8a) Certified Leading AI, Data Science, and Strategy Firm\"",
+          "why": "every page of WhoPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/who:We solve our clients’ most pressing data problems": {
+      "kind": "check",
+      "why": "every page of WhoPage the crawl read showed it (1 page)",
+      "facts": [
+        "page WhoPage check \"We solve our clients’ most pressing data problems\" spelled \"We solve our clients’ most pressing data problems\" by role heading \"We solve our clients’ most pressing data problems\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/who",
+          "snapshot": "crawl/pages/who.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoElements.java",
+          "line": 29,
+          "fact": "page WhoPage check \"We solve our clients’ most pressing data problems\" spelled \"We solve our clients’ most pressing data problems\" by role heading \"We solve our clients’ most pressing data problems\"",
+          "why": "every page of WhoPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/who:We prepare our clients for the future": {
+      "kind": "check",
+      "why": "every page of WhoPage the crawl read showed it (1 page)",
+      "facts": [
+        "page WhoPage check \"We prepare our clients for the future\" spelled \"We prepare our clients for the future\" by role heading \"We prepare our clients for the future\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/who",
+          "snapshot": "crawl/pages/who.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoElements.java",
+          "line": 33,
+          "fact": "page WhoPage check \"We prepare our clients for the future\" spelled \"We prepare our clients for the future\" by role heading \"We prepare our clients for the future\"",
+          "why": "every page of WhoPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/who:Our Strategic Partners": {
+      "kind": "check",
+      "why": "every page of WhoPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page WhoPage loaded-when \"Our Strategic Partners\"",
+        "page WhoPage check \"Our Strategic Partners\" spelled \"Our Strategic Partners\" by role heading \"Our Strategic Partners\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/who",
+          "snapshot": "crawl/pages/who.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoPage.java",
+          "line": 52,
+          "fact": "page WhoPage loaded-when \"Our Strategic Partners\"",
+          "why": "every page of WhoPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoElements.java",
+          "line": 37,
+          "fact": "page WhoPage check \"Our Strategic Partners\" spelled \"Our Strategic Partners\" by role heading \"Our Strategic Partners\"",
+          "why": "every page of WhoPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "link:/who:PEREGRINES8A_LINK": {
+      "kind": "link",
+      "why": "seen on /who: \"SBA (8a) Certified\" (/peregrines-8a); found by its role and name, exact: the crawl found exactly one on every page that must show it",
+      "facts": [
+        "page WhoPage link PEREGRINES8A_LINK role link \"SBA (8a) Certified\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/who",
+          "snapshot": "crawl/pages/who.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/WhoElements.java",
+          "line": 47,
+          "fact": "page WhoPage link PEREGRINES8A_LINK role link \"SBA (8a) Certified\"",
+          "why": "seen on /who: \"SBA (8a) Certified\" (/peregrines-8a); found by its role and name, exact: the crawl found exactly one on every page that must show it"
+        }
+      ]
+    },
+    "link:/who->/peregrines-8a": {
+      "kind": "link",
+      "why": "seen on /who: \"SBA (8a) Certified\" (/peregrines-8a)",
+      "facts": [
+        "page WhoPage links-to Peregrines8aPage clicking PEREGRINES8A_LINK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/who",
+          "snapshot": "crawl/pages/who.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/who/actions/WhoClickActions.java",
+          "line": 23,
+          "fact": "page WhoPage links-to Peregrines8aPage clicking PEREGRINES8A_LINK",
+          "why": "seen on /who: \"SBA (8a) Certified\" (/peregrines-8a)"
+        }
+      ]
+    },
+    "type:/services": {
+      "kind": "type",
+      "why": "no other page read is enough like it (the closest, /accomplishments, shares 65% of its layout and 20% of its headings) [rules: unlike-others]",
+      "facts": [
+        "page ServicesPage",
+        "page ServicesPage opens ()",
+        "page ServicesPage url-shapes /services",
+        "page ServicesPage doors click, read, verify",
+        "page ServicesPage settles 400",
+        "page ServicesPage title is \"Services 1 — Peregrine Advisors\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesPage.java",
+          "line": 39,
+          "fact": "page ServicesPage",
+          "why": "no other page read is enough like it (the closest, /accomplishments, shares 65% of its layout and 20% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesPage.java",
+          "line": 60,
+          "fact": "page ServicesPage opens ()",
+          "why": "no other page read is enough like it (the closest, /accomplishments, shares 65% of its layout and 20% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesPage.java",
+          "line": 67,
+          "fact": "page ServicesPage url-shapes /services",
+          "why": "no other page read is enough like it (the closest, /accomplishments, shares 65% of its layout and 20% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesPage.java",
+          "line": 39,
+          "fact": "page ServicesPage doors click, read, verify",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesPage.java",
+          "line": 98,
+          "fact": "page ServicesPage settles 400",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesPage.java",
+          "line": 46,
+          "fact": "page ServicesPage title is \"Services 1 — Peregrine Advisors\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "structure:/services:main-region": {
+      "kind": "structure",
+      "why": "its page read shows a main region",
+      "facts": [
+        "page ServicesPage structure MAIN_REGION xpath //main | //*[@role='main']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesElements.java",
+          "line": 48,
+          "fact": "page ServicesPage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "its page read shows a main region"
+        }
+      ]
+    },
+    "check:/services:Our Offerings": {
+      "kind": "check",
+      "why": "every page of ServicesPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page ServicesPage loaded-when \"Our Offerings\"",
+        "page ServicesPage check \"Our Offerings\" spelled \"Our Offerings\" by role heading \"Our Offerings\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesPage.java",
+          "line": 50,
+          "fact": "page ServicesPage loaded-when \"Our Offerings\"",
+          "why": "every page of ServicesPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesElements.java",
+          "line": 22,
+          "fact": "page ServicesPage check \"Our Offerings\" spelled \"Our Offerings\" by role heading \"Our Offerings\"",
+          "why": "every page of ServicesPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/services:Federal Agency CxO Advisory": {
+      "kind": "check",
+      "why": "every page of ServicesPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page ServicesPage loaded-when \"Federal Agency CxO Advisory\"",
+        "page ServicesPage check \"Federal Agency CxO Advisory\" spelled \"Federal Agency CxO Advisory\" by role heading \"Federal Agency CxO Advisory\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesPage.java",
+          "line": 50,
+          "fact": "page ServicesPage loaded-when \"Federal Agency CxO Advisory\"",
+          "why": "every page of ServicesPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesElements.java",
+          "line": 26,
+          "fact": "page ServicesPage check \"Federal Agency CxO Advisory\" spelled \"Federal Agency CxO Advisory\" by role heading \"Federal Agency CxO Advisory\"",
+          "why": "every page of ServicesPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/services:Enterprise Data Strategy and Usage": {
+      "kind": "check",
+      "why": "every page of ServicesPage the crawl read showed it (1 page)",
+      "facts": [
+        "page ServicesPage check \"Enterprise Data Strategy and Usage\" spelled \"Enterprise Data Strategy and Usage\" by role heading \"Enterprise Data Strategy and Usage\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesElements.java",
+          "line": 30,
+          "fact": "page ServicesPage check \"Enterprise Data Strategy and Usage\" spelled \"Enterprise Data Strategy and Usage\" by role heading \"Enterprise Data Strategy and Usage\"",
+          "why": "every page of ServicesPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/services:Data Architecture": {
+      "kind": "check",
+      "why": "every page of ServicesPage the crawl read showed it (1 page)",
+      "facts": [
+        "page ServicesPage check \"Data Architecture\" spelled \"Data Architecture\" by role heading \"Data Architecture\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesElements.java",
+          "line": 34,
+          "fact": "page ServicesPage check \"Data Architecture\" spelled \"Data Architecture\" by role heading \"Data Architecture\"",
+          "why": "every page of ServicesPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/services:AI and Machine Learning": {
+      "kind": "check",
+      "why": "every page of ServicesPage the crawl read showed it (1 page)",
+      "facts": [
+        "page ServicesPage check \"AI and Machine Learning\" spelled \"AI and Machine Learning\" by role heading \"AI and Machine Learning\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesElements.java",
+          "line": 38,
+          "fact": "page ServicesPage check \"AI and Machine Learning\" spelled \"AI and Machine Learning\" by role heading \"AI and Machine Learning\"",
+          "why": "every page of ServicesPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/services:Data Governance": {
+      "kind": "check",
+      "why": "every page of ServicesPage the crawl read showed it (1 page)",
+      "facts": [
+        "page ServicesPage check \"Data Governance\" spelled \"Data Governance\" by role heading \"Data Governance\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesElements.java",
+          "line": 42,
+          "fact": "page ServicesPage check \"Data Governance\" spelled \"Data Governance\" by role heading \"Data Governance\"",
+          "why": "every page of ServicesPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "link:/services:PEREGRINES8A_LINK": {
+      "kind": "link",
+      "why": "seen on /services: \"SBA 8(a) certified business\" (https://www.peregrineadvisors.com/peregrines-8a); found by its role and name, exact: the crawl found exactly one on every page that must show it",
+      "facts": [
+        "page ServicesPage link PEREGRINES8A_LINK role link \"SBA 8(a) certified business\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/ServicesElements.java",
+          "line": 55,
+          "fact": "page ServicesPage link PEREGRINES8A_LINK role link \"SBA 8(a) certified business\"",
+          "why": "seen on /services: \"SBA 8(a) certified business\" (https://www.peregrineadvisors.com/peregrines-8a); found by its role and name, exact: the crawl found exactly one on every page that must show it"
+        }
+      ]
+    },
+    "link:/services->/peregrines-8a": {
+      "kind": "link",
+      "why": "seen on /services: \"SBA 8(a) certified business\" (https://www.peregrineadvisors.com/peregrines-8a)",
+      "facts": [
+        "page ServicesPage links-to Peregrines8aPage clicking PEREGRINES8A_LINK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/services/actions/ServicesClickActions.java",
+          "line": 23,
+          "fact": "page ServicesPage links-to Peregrines8aPage clicking PEREGRINES8A_LINK",
+          "why": "seen on /services: \"SBA 8(a) certified business\" (https://www.peregrineadvisors.com/peregrines-8a)"
+        }
+      ]
+    },
+    "type:/our-work": {
+      "kind": "type",
+      "why": "no other page read is enough like it (the closest, /services, shares 83% of its layout and 0% of its headings) [rules: unlike-others]",
+      "facts": [
+        "page OurWorkPage",
+        "page OurWorkPage opens ()",
+        "page OurWorkPage url-shapes /our-work",
+        "page OurWorkPage doors click, read, verify",
+        "page OurWorkPage settles 500",
+        "page OurWorkPage title is \"Our Work — Peregrine Advisors\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/our-work",
+          "snapshot": "crawl/pages/our-work.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkPage.java",
+          "line": 37,
+          "fact": "page OurWorkPage",
+          "why": "no other page read is enough like it (the closest, /services, shares 83% of its layout and 0% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkPage.java",
+          "line": 57,
+          "fact": "page OurWorkPage opens ()",
+          "why": "no other page read is enough like it (the closest, /services, shares 83% of its layout and 0% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkPage.java",
+          "line": 64,
+          "fact": "page OurWorkPage url-shapes /our-work",
+          "why": "no other page read is enough like it (the closest, /services, shares 83% of its layout and 0% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkPage.java",
+          "line": 37,
+          "fact": "page OurWorkPage doors click, read, verify",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkPage.java",
+          "line": 95,
+          "fact": "page OurWorkPage settles 500",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkPage.java",
+          "line": 44,
+          "fact": "page OurWorkPage title is \"Our Work — Peregrine Advisors\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "control:/our-work:SEC_DATA_STRATEGY_BUTTON": {
+      "kind": "control",
+      "why": "seen on /our-work: button \"SEC Data Strategy\"; the crawl trusts its locator (button)",
+      "facts": [
+        "page OurWorkPage element SEC_DATA_STRATEGY_BUTTON role button \"SEC Data Strategy\"",
+        "page OurWorkPage click secDataStrategy on SEC_DATA_STRATEGY_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/our-work",
+          "snapshot": "crawl/pages/our-work.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkElements.java",
+          "line": 31,
+          "fact": "page OurWorkPage element SEC_DATA_STRATEGY_BUTTON role button \"SEC Data Strategy\"",
+          "why": "seen on /our-work: button \"SEC Data Strategy\"; the crawl trusts its locator (button)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/actions/OurWorkClickActions.java",
+          "line": 26,
+          "fact": "page OurWorkPage click secDataStrategy on SEC_DATA_STRATEGY_BUTTON",
+          "why": "seen on /our-work: button \"SEC Data Strategy\""
+        }
+      ]
+    },
+    "control:/our-work:SEC_DATA_VISUALIZATIONS_PUBLIC_PORTAL_BUTTON": {
+      "kind": "control",
+      "why": "seen on /our-work: button \"SEC Data Visualizations Public Portal\"; the crawl trusts its locator (button)",
+      "facts": [
+        "page OurWorkPage element SEC_DATA_VISUALIZATIONS_PUBLIC_PORTAL_BUTTON role button \"SEC Data Visualizations Public Portal\"",
+        "page OurWorkPage click secDataVisualizationsPublicPortal on SEC_DATA_VISUALIZATIONS_PUBLIC_PORTAL_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/our-work",
+          "snapshot": "crawl/pages/our-work.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkElements.java",
+          "line": 35,
+          "fact": "page OurWorkPage element SEC_DATA_VISUALIZATIONS_PUBLIC_PORTAL_BUTTON role button \"SEC Data Visualizations Public Portal\"",
+          "why": "seen on /our-work: button \"SEC Data Visualizations Public Portal\"; the crawl trusts its locator (button)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/actions/OurWorkClickActions.java",
+          "line": 35,
+          "fact": "page OurWorkPage click secDataVisualizationsPublicPortal on SEC_DATA_VISUALIZATIONS_PUBLIC_PORTAL_BUTTON",
+          "why": "seen on /our-work: button \"SEC Data Visualizations Public Portal\""
+        }
+      ]
+    },
+    "control:/our-work:LIVE_CRYPTO_DASHBOARD_BUTTON": {
+      "kind": "control",
+      "why": "seen on /our-work: button \"Live Crypto Dashboard\"; the crawl trusts its locator (button)",
+      "facts": [
+        "page OurWorkPage element LIVE_CRYPTO_DASHBOARD_BUTTON role button \"Live Crypto Dashboard\"",
+        "page OurWorkPage click liveCryptoDashboard on LIVE_CRYPTO_DASHBOARD_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/our-work",
+          "snapshot": "crawl/pages/our-work.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkElements.java",
+          "line": 39,
+          "fact": "page OurWorkPage element LIVE_CRYPTO_DASHBOARD_BUTTON role button \"Live Crypto Dashboard\"",
+          "why": "seen on /our-work: button \"Live Crypto Dashboard\"; the crawl trusts its locator (button)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/actions/OurWorkClickActions.java",
+          "line": 44,
+          "fact": "page OurWorkPage click liveCryptoDashboard on LIVE_CRYPTO_DASHBOARD_BUTTON",
+          "why": "seen on /our-work: button \"Live Crypto Dashboard\""
+        }
+      ]
+    },
+    "control:/our-work:CX_O_LEADERSHIP_DIAGNOSTIC_TOOL_BUTTON": {
+      "kind": "control",
+      "why": "seen on /our-work: button \"CxO Leadership Diagnostic Tool\"; the crawl trusts its locator (button)",
+      "facts": [
+        "page OurWorkPage element CX_O_LEADERSHIP_DIAGNOSTIC_TOOL_BUTTON role button \"CxO Leadership Diagnostic Tool\"",
+        "page OurWorkPage click cxOLeadershipDiagnosticTool on CX_O_LEADERSHIP_DIAGNOSTIC_TOOL_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/our-work",
+          "snapshot": "crawl/pages/our-work.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkElements.java",
+          "line": 43,
+          "fact": "page OurWorkPage element CX_O_LEADERSHIP_DIAGNOSTIC_TOOL_BUTTON role button \"CxO Leadership Diagnostic Tool\"",
+          "why": "seen on /our-work: button \"CxO Leadership Diagnostic Tool\"; the crawl trusts its locator (button)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/actions/OurWorkClickActions.java",
+          "line": 53,
+          "fact": "page OurWorkPage click cxOLeadershipDiagnosticTool on CX_O_LEADERSHIP_DIAGNOSTIC_TOOL_BUTTON",
+          "why": "seen on /our-work: button \"CxO Leadership Diagnostic Tool\""
+        }
+      ]
+    },
+    "structure:/our-work:main-region": {
+      "kind": "structure",
+      "why": "its page read shows a main region",
+      "facts": [
+        "page OurWorkPage structure MAIN_REGION xpath //main | //*[@role='main']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/our-work",
+          "snapshot": "crawl/pages/our-work.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkElements.java",
+          "line": 27,
+          "fact": "page OurWorkPage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "its page read shows a main region"
+        }
+      ]
+    },
+    "check:/our-work:Our Work": {
+      "kind": "check",
+      "why": "every page of OurWorkPage the crawl read showed it (1 page); isLoaded() waits for the first 1 checks",
+      "facts": [
+        "page OurWorkPage loaded-when \"Our Work\"",
+        "page OurWorkPage check \"Our Work\" spelled \"Our Work\" by role heading \"Our Work\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/our-work",
+          "snapshot": "crawl/pages/our-work.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkPage.java",
+          "line": 48,
+          "fact": "page OurWorkPage loaded-when \"Our Work\"",
+          "why": "every page of OurWorkPage the crawl read showed it (1 page); isLoaded() waits for the first 1 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/ourwork/OurWorkElements.java",
+          "line": 22,
+          "fact": "page OurWorkPage check \"Our Work\" spelled \"Our Work\" by role heading \"Our Work\"",
+          "why": "every page of OurWorkPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "type:/blog": {
+      "kind": "type",
+      "why": "laid out like /blog/tag/BSA%2FAML, /blog/tag/Anti-Money%20Laundering, /blog/tag/AML and 5 more, but no title or heading says they are one kind of page, and their addresses share no part: each is its own [rules: layout-only]",
+      "facts": [
+        "page BlogPage",
+        "page BlogPage opens ()",
+        "page BlogPage url-shapes /blog",
+        "page BlogPage doors click, read, verify",
+        "page BlogPage settles 500",
+        "page BlogPage title is \"Blog — Peregrine Advisors\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog",
+          "snapshot": "crawl/pages/blog.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogPage.java",
+          "line": 39,
+          "fact": "page BlogPage",
+          "why": "laid out like /blog/tag/BSA%2FAML, /blog/tag/Anti-Money%20Laundering, /blog/tag/AML and 5 more, but no title or heading says they are one kind of page, and their addresses share no part: each is its own [rules: layout-only]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogPage.java",
+          "line": 60,
+          "fact": "page BlogPage opens ()",
+          "why": "laid out like /blog/tag/BSA%2FAML, /blog/tag/Anti-Money%20Laundering, /blog/tag/AML and 5 more, but no title or heading says they are one kind of page, and their addresses share no part: each is its own [rules: layout-only]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogPage.java",
+          "line": 67,
+          "fact": "page BlogPage url-shapes /blog",
+          "why": "laid out like /blog/tag/BSA%2FAML, /blog/tag/Anti-Money%20Laundering, /blog/tag/AML and 5 more, but no title or heading says they are one kind of page, and their addresses share no part: each is its own [rules: layout-only]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogPage.java",
+          "line": 39,
+          "fact": "page BlogPage doors click, read, verify",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogPage.java",
+          "line": 97,
+          "fact": "page BlogPage settles 500",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogPage.java",
+          "line": 46,
+          "fact": "page BlogPage title is \"Blog — Peregrine Advisors\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "structure:/blog:main-region": {
+      "kind": "structure",
+      "why": "its page read shows a main region",
+      "facts": [
+        "page BlogPage structure MAIN_REGION xpath //main | //*[@role='main']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog",
+          "snapshot": "crawl/pages/blog.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogElements.java",
+          "line": 36,
+          "fact": "page BlogPage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "its page read shows a main region"
+        }
+      ]
+    },
+    "check:/blog:THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW": {
+      "kind": "check",
+      "why": "every page of BlogPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page BlogPage loaded-when \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\"",
+        "page BlogPage check \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\" spelled \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\" by role heading \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog",
+          "snapshot": "crawl/pages/blog.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogPage.java",
+          "line": 50,
+          "fact": "page BlogPage loaded-when \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\"",
+          "why": "every page of BlogPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogElements.java",
+          "line": 26,
+          "fact": "page BlogPage check \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\" spelled \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\" by role heading \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\"",
+          "why": "every page of BlogPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "check:/blog:AN OVERVIEW OF MODERN MONEY LAUNDERING": {
+      "kind": "check",
+      "why": "every page of BlogPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks",
+      "facts": [
+        "page BlogPage loaded-when \"AN OVERVIEW OF MODERN MONEY LAUNDERING\"",
+        "page BlogPage check \"AN OVERVIEW OF MODERN MONEY LAUNDERING\" spelled \"AN OVERVIEW OF MODERN MONEY LAUNDERING\" by role heading \"AN OVERVIEW OF MODERN MONEY LAUNDERING\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog",
+          "snapshot": "crawl/pages/blog.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogPage.java",
+          "line": 50,
+          "fact": "page BlogPage loaded-when \"AN OVERVIEW OF MODERN MONEY LAUNDERING\"",
+          "why": "every page of BlogPage the crawl read showed it (1 page); isLoaded() waits for the first 2 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogElements.java",
+          "line": 30,
+          "fact": "page BlogPage check \"AN OVERVIEW OF MODERN MONEY LAUNDERING\" spelled \"AN OVERVIEW OF MODERN MONEY LAUNDERING\" by role heading \"AN OVERVIEW OF MODERN MONEY LAUNDERING\"",
+          "why": "every page of BlogPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "link:/blog->/blog/*": {
+      "kind": "link",
+      "why": "seen on /blog: \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\" (/blog/crypto-task-force)",
+      "facts": [
+        "page BlogPage links-to ArticlePage clicking getArticleLink",
+        "page BlogPage helper getArticleLink href \"/blog/\" + name match \"//a[@href=\" + literal(href) + \" or @href=\" + literal(decoded) + \"]\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog",
+          "snapshot": "crawl/pages/blog.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/actions/BlogClickActions.java",
+          "line": 26,
+          "fact": "page BlogPage links-to ArticlePage clicking getArticleLink",
+          "why": "seen on /blog: \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\" (/blog/crypto-task-force)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/blog/BlogElements.java",
+          "line": 69,
+          "fact": "page BlogPage helper getArticleLink href \"/blog/\" + name match \"//a[@href=\" + literal(href) + \" or @href=\" + literal(decoded) + \"]\"",
+          "why": "seen on /blog: \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\" (/blog/crypto-task-force); its address holds name"
+        }
+      ]
+    },
+    "type:/blog/*": {
+      "kind": "type",
+      "why": "its 5 pages read look alike (layout 94% the same, headings 11%) and share the address pattern /blog/*; joined by: a listing: nearly the same layout, in one folder pattern (8 comparisons); the headings agree, with some layout shared (1 comparison); the layouts agree, with some headings shared (1 comparison) [rules: family-by-address; listing-folder x8; headings-agree x1; layout-and-some-headings x1]",
+      "facts": [
+        "page ArticlePage",
+        "page ArticlePage opens (name)",
+        "page ArticlePage url-shapes /blog/*",
+        "page ArticlePage doors click, read, verify",
+        "page ArticlePage settles 500"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/srkperegrineadvisorscom",
+          "snapshot": "crawl/pages/blog/srkperegrineadvisorscom.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/ai-and-data-in-government",
+          "snapshot": "crawl/pages/blog/ai-and-data-in-government.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/crypto-task-force",
+          "snapshot": "crawl/pages/blog/crypto-task-force.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst",
+          "snapshot": "crawl/pages/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/edlc",
+          "snapshot": "crawl/pages/blog/edlc.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/ArticlePage.java",
+          "line": 40,
+          "fact": "page ArticlePage",
+          "why": "its 5 pages read look alike (layout 94% the same, headings 11%) and share the address pattern /blog/*; joined by: a listing: nearly the same layout, in one folder pattern (8 comparisons); the headings agree, with some layout shared (1 comparison); the layouts agree, with some headings shared (1 comparison) [rules: family-by-address; listing-folder x8; headings-agree x1; layout-and-some-headings x1]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/ArticlePage.java",
+          "line": 78,
+          "fact": "page ArticlePage opens (name)",
+          "why": "its 5 pages read look alike (layout 94% the same, headings 11%) and share the address pattern /blog/*; joined by: a listing: nearly the same layout, in one folder pattern (8 comparisons); the headings agree, with some layout shared (1 comparison); the layouts agree, with some headings shared (1 comparison) [rules: family-by-address; listing-folder x8; headings-agree x1; layout-and-some-headings x1]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/ArticlePage.java",
+          "line": 49,
+          "fact": "page ArticlePage url-shapes /blog/*",
+          "why": "its 5 pages read look alike (layout 94% the same, headings 11%) and share the address pattern /blog/*; joined by: a listing: nearly the same layout, in one folder pattern (8 comparisons); the headings agree, with some layout shared (1 comparison); the layouts agree, with some headings shared (1 comparison) [rules: family-by-address; listing-folder x8; headings-agree x1; layout-and-some-headings x1]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/ArticlePage.java",
+          "line": 40,
+          "fact": "page ArticlePage doors click, read, verify",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/ArticlePage.java",
+          "line": 115,
+          "fact": "page ArticlePage settles 500",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        }
+      ]
+    },
+    "structure:/blog/*:main-heading": {
+      "kind": "structure",
+      "why": "each of its 5 pages read has one main heading (h1), whatever it says",
+      "facts": [
+        "page ArticlePage structure MAIN_HEADING xpath //h1",
+        "page ArticlePage loaded-when MAIN_HEADING"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/srkperegrineadvisorscom",
+          "snapshot": "crawl/pages/blog/srkperegrineadvisorscom.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/ai-and-data-in-government",
+          "snapshot": "crawl/pages/blog/ai-and-data-in-government.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/crypto-task-force",
+          "snapshot": "crawl/pages/blog/crypto-task-force.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst",
+          "snapshot": "crawl/pages/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/edlc",
+          "snapshot": "crawl/pages/blog/edlc.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/ArticleElements.java",
+          "line": 23,
+          "fact": "page ArticlePage structure MAIN_HEADING xpath //h1",
+          "why": "each of its 5 pages read has one main heading (h1), whatever it says"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/ArticlePage.java",
+          "line": 66,
+          "fact": "page ArticlePage loaded-when MAIN_HEADING",
+          "why": "each of its 5 pages read has one main heading (h1), whatever it says; structure before copy"
+        }
+      ]
+    },
+    "structure:/blog/*:main-region": {
+      "kind": "structure",
+      "why": "each of its 5 pages read shows a main region",
+      "facts": [
+        "page ArticlePage structure MAIN_REGION xpath //main | //*[@role='main']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/srkperegrineadvisorscom",
+          "snapshot": "crawl/pages/blog/srkperegrineadvisorscom.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/ai-and-data-in-government",
+          "snapshot": "crawl/pages/blog/ai-and-data-in-government.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/crypto-task-force",
+          "snapshot": "crawl/pages/blog/crypto-task-force.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst",
+          "snapshot": "crawl/pages/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/edlc",
+          "snapshot": "crawl/pages/blog/edlc.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/ArticleElements.java",
+          "line": 25,
+          "fact": "page ArticlePage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "each of its 5 pages read shows a main region"
+        }
+      ]
+    },
+    "link:/blog/*->/blog/*": {
+      "kind": "link",
+      "why": "seen on /blog/srkperegrineadvisorscom: \"Previous Previous THE EVOLVING LANDSCAPE OF AI AND DATA REGULATION IN THE UNITE…\" (/blog/ai-and-data-in-government)",
+      "facts": [
+        "page ArticlePage links-to ArticlePage clicking getArticleLink",
+        "page ArticlePage helper getArticleLink href \"/blog/\" + name match \"//a[@href=\" + literal(href) + \" or @href=\" + literal(decoded) + \"]\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/srkperegrineadvisorscom",
+          "snapshot": "crawl/pages/blog/srkperegrineadvisorscom.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/actions/ArticleClickActions.java",
+          "line": 27,
+          "fact": "page ArticlePage links-to ArticlePage clicking getArticleLink",
+          "why": "seen on /blog/srkperegrineadvisorscom: \"Previous Previous THE EVOLVING LANDSCAPE OF AI AND DATA REGULATION IN THE UNITE…\" (/blog/ai-and-data-in-government)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/ArticleElements.java",
+          "line": 58,
+          "fact": "page ArticlePage helper getArticleLink href \"/blog/\" + name match \"//a[@href=\" + literal(href) + \" or @href=\" + literal(decoded) + \"]\"",
+          "why": "seen on /blog/srkperegrineadvisorscom: \"Previous Previous THE EVOLVING LANDSCAPE OF AI AND DATA REGULATION IN THE UNITE…\" (/blog/ai-and-data-in-government); its address holds name"
+        }
+      ]
+    },
+    "link:/blog/*->/blog/tag/*": {
+      "kind": "link",
+      "why": "seen on /blog/srkperegrineadvisorscom: \"AML\" (/blog/tag/AML)",
+      "facts": [
+        "page ArticlePage links-to TagPage clicking getTagLink",
+        "page ArticlePage helper getTagLink href \"/blog/tag/\" + name match \"//a[@href=\" + literal(href) + \" or @href=\" + literal(decoded) + \"]\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/srkperegrineadvisorscom",
+          "snapshot": "crawl/pages/blog/srkperegrineadvisorscom.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/actions/ArticleClickActions.java",
+          "line": 33,
+          "fact": "page ArticlePage links-to TagPage clicking getTagLink",
+          "why": "seen on /blog/srkperegrineadvisorscom: \"AML\" (/blog/tag/AML)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/article/ArticleElements.java",
+          "line": 68,
+          "fact": "page ArticlePage helper getTagLink href \"/blog/tag/\" + name match \"//a[@href=\" + literal(href) + \" or @href=\" + literal(decoded) + \"]\"",
+          "why": "seen on /blog/srkperegrineadvisorscom: \"AML\" (/blog/tag/AML); its address holds name"
+        }
+      ]
+    },
+    "type:/blog/tag/*": {
+      "kind": "type",
+      "why": "its 8 pages read look alike (layout 100% the same, headings 4%) and share the address pattern /blog/tag/*; joined by: a listing: nearly the same layout, in one folder pattern (27 comparisons); the headings agree, with some layout shared (1 comparison) [rules: family-by-address; listing-folder x27; headings-agree x1]",
+      "facts": [
+        "page TagPage",
+        "page TagPage opens (name)",
+        "page TagPage url-shapes /blog/tag/*",
+        "page TagPage doors click, read, verify",
+        "page TagPage settles 500"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/BSA%2FAML",
+          "snapshot": "crawl/pages/blog/tag/BSA_AML.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Anti-Money%20Laundering",
+          "snapshot": "crawl/pages/blog/tag/Anti-Money_Laundering.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/AML",
+          "snapshot": "crawl/pages/blog/tag/AML.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Data%20Lifecycle",
+          "snapshot": "crawl/pages/blog/tag/Data_Lifecycle.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Money%20Laundering",
+          "snapshot": "crawl/pages/blog/tag/Money_Laundering.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Lifecycle",
+          "snapshot": "crawl/pages/blog/tag/Lifecycle.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Data%20Fundamentals",
+          "snapshot": "crawl/pages/blog/tag/Data_Fundamentals.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/EDLC",
+          "snapshot": "crawl/pages/blog/tag/EDLC.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/tag/TagPage.java",
+          "line": 39,
+          "fact": "page TagPage",
+          "why": "its 8 pages read look alike (layout 100% the same, headings 4%) and share the address pattern /blog/tag/*; joined by: a listing: nearly the same layout, in one folder pattern (27 comparisons); the headings agree, with some layout shared (1 comparison) [rules: family-by-address; listing-folder x27; headings-agree x1]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/tag/TagPage.java",
+          "line": 80,
+          "fact": "page TagPage opens (name)",
+          "why": "its 8 pages read look alike (layout 100% the same, headings 4%) and share the address pattern /blog/tag/*; joined by: a listing: nearly the same layout, in one folder pattern (27 comparisons); the headings agree, with some layout shared (1 comparison) [rules: family-by-address; listing-folder x27; headings-agree x1]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/tag/TagPage.java",
+          "line": 48,
+          "fact": "page TagPage url-shapes /blog/tag/*",
+          "why": "its 8 pages read look alike (layout 100% the same, headings 4%) and share the address pattern /blog/tag/*; joined by: a listing: nearly the same layout, in one folder pattern (27 comparisons); the headings agree, with some layout shared (1 comparison) [rules: family-by-address; listing-folder x27; headings-agree x1]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/tag/TagPage.java",
+          "line": 39,
+          "fact": "page TagPage doors click, read, verify",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/tag/TagPage.java",
+          "line": 117,
+          "fact": "page TagPage settles 500",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        }
+      ]
+    },
+    "structure:/blog/tag/*:main-heading": {
+      "kind": "structure",
+      "why": "each of its 8 pages read has one main heading (h1), whatever it says",
+      "facts": [
+        "page TagPage structure MAIN_HEADING xpath //h1",
+        "page TagPage loaded-when MAIN_HEADING"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/BSA%2FAML",
+          "snapshot": "crawl/pages/blog/tag/BSA_AML.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Anti-Money%20Laundering",
+          "snapshot": "crawl/pages/blog/tag/Anti-Money_Laundering.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/AML",
+          "snapshot": "crawl/pages/blog/tag/AML.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Data%20Lifecycle",
+          "snapshot": "crawl/pages/blog/tag/Data_Lifecycle.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Money%20Laundering",
+          "snapshot": "crawl/pages/blog/tag/Money_Laundering.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Lifecycle",
+          "snapshot": "crawl/pages/blog/tag/Lifecycle.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Data%20Fundamentals",
+          "snapshot": "crawl/pages/blog/tag/Data_Fundamentals.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/EDLC",
+          "snapshot": "crawl/pages/blog/tag/EDLC.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/tag/TagElements.java",
+          "line": 22,
+          "fact": "page TagPage structure MAIN_HEADING xpath //h1",
+          "why": "each of its 8 pages read has one main heading (h1), whatever it says"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/tag/TagPage.java",
+          "line": 68,
+          "fact": "page TagPage loaded-when MAIN_HEADING",
+          "why": "each of its 8 pages read has one main heading (h1), whatever it says; structure before copy"
+        }
+      ]
+    },
+    "structure:/blog/tag/*:main-region": {
+      "kind": "structure",
+      "why": "each of its 8 pages read shows a main region",
+      "facts": [
+        "page TagPage structure MAIN_REGION xpath //main | //*[@role='main']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/BSA%2FAML",
+          "snapshot": "crawl/pages/blog/tag/BSA_AML.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Anti-Money%20Laundering",
+          "snapshot": "crawl/pages/blog/tag/Anti-Money_Laundering.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/AML",
+          "snapshot": "crawl/pages/blog/tag/AML.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Data%20Lifecycle",
+          "snapshot": "crawl/pages/blog/tag/Data_Lifecycle.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Money%20Laundering",
+          "snapshot": "crawl/pages/blog/tag/Money_Laundering.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Lifecycle",
+          "snapshot": "crawl/pages/blog/tag/Lifecycle.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Data%20Fundamentals",
+          "snapshot": "crawl/pages/blog/tag/Data_Fundamentals.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/EDLC",
+          "snapshot": "crawl/pages/blog/tag/EDLC.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/tag/TagElements.java",
+          "line": 24,
+          "fact": "page TagPage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "each of its 8 pages read shows a main region"
+        }
+      ]
+    },
+    "link:/blog/tag/*->/blog/*": {
+      "kind": "link",
+      "why": "seen on /blog/tag/BSA%2FAML: \"AN OVERVIEW OF MODERN MONEY LAUNDERING\" (/blog/srkperegrineadvisorscom)",
+      "facts": [
+        "page TagPage links-to ArticlePage clicking getArticleLink",
+        "page TagPage helper getArticleLink href \"/blog/\" + name match \"//a[@href=\" + literal(href) + \" or @href=\" + literal(decoded) + \"]\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/BSA%2FAML",
+          "snapshot": "crawl/pages/blog/tag/BSA_AML.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/tag/actions/TagClickActions.java",
+          "line": 23,
+          "fact": "page TagPage links-to ArticlePage clicking getArticleLink",
+          "why": "seen on /blog/tag/BSA%2FAML: \"AN OVERVIEW OF MODERN MONEY LAUNDERING\" (/blog/srkperegrineadvisorscom)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/tag/TagElements.java",
+          "line": 57,
+          "fact": "page TagPage helper getArticleLink href \"/blog/\" + name match \"//a[@href=\" + literal(href) + \" or @href=\" + literal(decoded) + \"]\"",
+          "why": "seen on /blog/tag/BSA%2FAML: \"AN OVERVIEW OF MODERN MONEY LAUNDERING\" (/blog/srkperegrineadvisorscom); its address holds name"
+        }
+      ]
+    },
+    "type:/peregrines-8a": {
+      "kind": "type",
+      "why": "no other page read is enough like it (the closest, /cart, shares 73% of its layout and 0% of its headings) [rules: unlike-others]",
+      "facts": [
+        "page Peregrines8aPage",
+        "page Peregrines8aPage opens ()",
+        "page Peregrines8aPage url-shapes /peregrines-8a",
+        "page Peregrines8aPage doors click, read, verify",
+        "page Peregrines8aPage settles 500",
+        "page Peregrines8aPage title is \"Peregrine's 8(a) — Peregrine Advisors\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/peregrines-8a",
+          "snapshot": "crawl/pages/peregrines-8a.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aPage.java",
+          "line": 38,
+          "fact": "page Peregrines8aPage",
+          "why": "no other page read is enough like it (the closest, /cart, shares 73% of its layout and 0% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aPage.java",
+          "line": 58,
+          "fact": "page Peregrines8aPage opens ()",
+          "why": "no other page read is enough like it (the closest, /cart, shares 73% of its layout and 0% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aPage.java",
+          "line": 65,
+          "fact": "page Peregrines8aPage url-shapes /peregrines-8a",
+          "why": "no other page read is enough like it (the closest, /cart, shares 73% of its layout and 0% of its headings) [rules: unlike-others]"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aPage.java",
+          "line": 38,
+          "fact": "page Peregrines8aPage doors click, read, verify",
+          "why": "the doors its controls, links and forms give it, read and verify always, and any a person filled"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aPage.java",
+          "line": 96,
+          "fact": "page Peregrines8aPage settles 500",
+          "why": "the median of its pages read, after their load event, the crawl's quiet windows taken out"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aPage.java",
+          "line": 45,
+          "fact": "page Peregrines8aPage title is \"Peregrine's 8(a) — Peregrine Advisors\"",
+          "why": "every page read of it had this title"
+        }
+      ]
+    },
+    "control:/peregrines-8a:WHAT_IS_THE_SBA_8_BUTTON": {
+      "kind": "control",
+      "why": "seen on /peregrines-8a: button \"What is the SBA 8(a) program?\"; the crawl trusts its locator (button)",
+      "facts": [
+        "page Peregrines8aPage element WHAT_IS_THE_SBA_8_BUTTON role button \"What is the SBA 8(a) program?\"",
+        "page Peregrines8aPage click whatIsTheSba8 on WHAT_IS_THE_SBA_8_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/peregrines-8a",
+          "snapshot": "crawl/pages/peregrines-8a.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aElements.java",
+          "line": 32,
+          "fact": "page Peregrines8aPage element WHAT_IS_THE_SBA_8_BUTTON role button \"What is the SBA 8(a) program?\"",
+          "why": "seen on /peregrines-8a: button \"What is the SBA 8(a) program?\"; the crawl trusts its locator (button)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/actions/Peregrines8aClickActions.java",
+          "line": 26,
+          "fact": "page Peregrines8aPage click whatIsTheSba8 on WHAT_IS_THE_SBA_8_BUTTON",
+          "why": "seen on /peregrines-8a: button \"What is the SBA 8(a) program?\""
+        }
+      ]
+    },
+    "control:/peregrines-8a:WHAT_DOES_THE_SBA_8_BUTTON": {
+      "kind": "control",
+      "why": "seen on /peregrines-8a: button \"What does the SBA 8(a) certification enable Peregrine to do?\"; the crawl trusts its locator (button)",
+      "facts": [
+        "page Peregrines8aPage element WHAT_DOES_THE_SBA_8_BUTTON role button \"What does the SBA 8(a) certification enable Peregrine to do?\"",
+        "page Peregrines8aPage click whatDoesTheSba8 on WHAT_DOES_THE_SBA_8_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/peregrines-8a",
+          "snapshot": "crawl/pages/peregrines-8a.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aElements.java",
+          "line": 36,
+          "fact": "page Peregrines8aPage element WHAT_DOES_THE_SBA_8_BUTTON role button \"What does the SBA 8(a) certification enable Peregrine to do?\"",
+          "why": "seen on /peregrines-8a: button \"What does the SBA 8(a) certification enable Peregrine to do?\"; the crawl trusts its locator (button)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/actions/Peregrines8aClickActions.java",
+          "line": 35,
+          "fact": "page Peregrines8aPage click whatDoesTheSba8 on WHAT_DOES_THE_SBA_8_BUTTON",
+          "why": "seen on /peregrines-8a: button \"What does the SBA 8(a) certification enable Peregrine to do?\""
+        }
+      ]
+    },
+    "control:/peregrines-8a:HOW_CAN_FEDERAL_ORGANIZATIONS_LEVERAGE_BUTTON": {
+      "kind": "control",
+      "why": "seen on /peregrines-8a: button \"How can federal organizations leverage Peregrine’s 8(a) c...\"; the crawl trusts its locator (button)",
+      "facts": [
+        "page Peregrines8aPage element HOW_CAN_FEDERAL_ORGANIZATIONS_LEVERAGE_BUTTON xpath //button[starts-with(normalize-space(),'How can federal organizations leverage')]",
+        "page Peregrines8aPage click howCanFederalOrganizationsLeverage on HOW_CAN_FEDERAL_ORGANIZATIONS_LEVERAGE_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/peregrines-8a",
+          "snapshot": "crawl/pages/peregrines-8a.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aElements.java",
+          "line": 40,
+          "fact": "page Peregrines8aPage element HOW_CAN_FEDERAL_ORGANIZATIONS_LEVERAGE_BUTTON xpath //button[starts-with(normalize-space(),'How can federal organizations leverage')]",
+          "why": "seen on /peregrines-8a: button \"How can federal organizations leverage Peregrine’s 8(a) c...\"; the crawl trusts its locator (button)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/actions/Peregrines8aClickActions.java",
+          "line": 44,
+          "fact": "page Peregrines8aPage click howCanFederalOrganizationsLeverage on HOW_CAN_FEDERAL_ORGANIZATIONS_LEVERAGE_BUTTON",
+          "why": "seen on /peregrines-8a: button \"How can federal organizations leverage Peregrine’s 8(a) c...\""
+        }
+      ]
+    },
+    "control:/peregrines-8a:HOW_CAN_PEREGRINE_BE_AWARDED_BUTTON": {
+      "kind": "control",
+      "why": "seen on /peregrines-8a: button \"How can Peregrine be awarded an 8(a) direct sole source c...\"; the crawl trusts its locator (button)",
+      "facts": [
+        "page Peregrines8aPage element HOW_CAN_PEREGRINE_BE_AWARDED_BUTTON xpath //button[starts-with(normalize-space(),'How can Peregrine be awarded an 8(a)')]",
+        "page Peregrines8aPage click howCanPeregrineBeAwarded on HOW_CAN_PEREGRINE_BE_AWARDED_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/peregrines-8a",
+          "snapshot": "crawl/pages/peregrines-8a.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aElements.java",
+          "line": 44,
+          "fact": "page Peregrines8aPage element HOW_CAN_PEREGRINE_BE_AWARDED_BUTTON xpath //button[starts-with(normalize-space(),'How can Peregrine be awarded an 8(a)')]",
+          "why": "seen on /peregrines-8a: button \"How can Peregrine be awarded an 8(a) direct sole source c...\"; the crawl trusts its locator (button)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/actions/Peregrines8aClickActions.java",
+          "line": 53,
+          "fact": "page Peregrines8aPage click howCanPeregrineBeAwarded on HOW_CAN_PEREGRINE_BE_AWARDED_BUTTON",
+          "why": "seen on /peregrines-8a: button \"How can Peregrine be awarded an 8(a) direct sole source c...\""
+        }
+      ]
+    },
+    "control:/peregrines-8a:HOW_CAN_8_A_ENTITIES_BUTTON": {
+      "kind": "control",
+      "why": "seen on /peregrines-8a: button \"How can 8(a) entities take part in restricted competitive...\"; the crawl trusts its locator (button)",
+      "facts": [
+        "page Peregrines8aPage element HOW_CAN_8_A_ENTITIES_BUTTON xpath //button[starts-with(normalize-space(),'How can 8(a) entities take part in')]",
+        "page Peregrines8aPage click howCan8AEntities on HOW_CAN_8_A_ENTITIES_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/peregrines-8a",
+          "snapshot": "crawl/pages/peregrines-8a.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aElements.java",
+          "line": 48,
+          "fact": "page Peregrines8aPage element HOW_CAN_8_A_ENTITIES_BUTTON xpath //button[starts-with(normalize-space(),'How can 8(a) entities take part in')]",
+          "why": "seen on /peregrines-8a: button \"How can 8(a) entities take part in restricted competitive...\"; the crawl trusts its locator (button)"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/actions/Peregrines8aClickActions.java",
+          "line": 62,
+          "fact": "page Peregrines8aPage click howCan8AEntities on HOW_CAN_8_A_ENTITIES_BUTTON",
+          "why": "seen on /peregrines-8a: button \"How can 8(a) entities take part in restricted competitive...\""
+        }
+      ]
+    },
+    "structure:/peregrines-8a:main-region": {
+      "kind": "structure",
+      "why": "its page read shows a main region",
+      "facts": [
+        "page Peregrines8aPage structure MAIN_REGION xpath //main | //*[@role='main']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/peregrines-8a",
+          "snapshot": "crawl/pages/peregrines-8a.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aElements.java",
+          "line": 28,
+          "fact": "page Peregrines8aPage structure MAIN_REGION xpath //main | //*[@role='main']",
+          "why": "its page read shows a main region"
+        }
+      ]
+    },
+    "check:/peregrines-8a:SBA 8(a) FAQs": {
+      "kind": "check",
+      "why": "every page of Peregrines8aPage the crawl read showed it (1 page); isLoaded() waits for the first 1 checks",
+      "facts": [
+        "page Peregrines8aPage loaded-when \"SBA 8(a) FAQs\"",
+        "page Peregrines8aPage check \"SBA 8(a) FAQs\" spelled \"SBA 8(a) FAQs\" by role heading \"SBA 8(a) FAQs\""
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/peregrines-8a",
+          "snapshot": "crawl/pages/peregrines-8a.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aPage.java",
+          "line": 49,
+          "fact": "page Peregrines8aPage loaded-when \"SBA 8(a) FAQs\"",
+          "why": "every page of Peregrines8aPage the crawl read showed it (1 page); isLoaded() waits for the first 1 checks"
+        },
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/peregrines8a/Peregrines8aElements.java",
+          "line": 22,
+          "fact": "page Peregrines8aPage check \"SBA 8(a) FAQs\" spelled \"SBA 8(a) FAQs\" by role heading \"SBA 8(a) FAQs\"",
+          "why": "every page of Peregrines8aPage the crawl read showed it (1 page)"
+        }
+      ]
+    },
+    "run:timings": {
+      "kind": "run",
+      "why": "each page load timed: the same rows in every framework",
+      "facts": [
+        "run timings columns test,page,path,ready_ms,first_byte_ms,dom_loaded_ms,load_ms,after_load_ms,crawl_after_load_ms,slow"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/core/Timings.java",
+          "line": 38,
+          "fact": "run timings columns test,page,path,ready_ms,first_byte_ms,dom_loaded_ms,load_ms,after_load_ms,crawl_after_load_ms,slow",
+          "why": "each page load timed: the same rows in every framework"
+        }
+      ]
+    },
+    "run:api-timings": {
+      "kind": "run",
+      "why": "each API call timed: the same rows in every framework",
+      "facts": [
+        "run api timings columns test,call,status,ms,previous_ms,slow"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/core/Timings.java",
+          "line": 48,
+          "fact": "run api timings columns test,call,status,ms,previous_ms,slow",
+          "why": "each API call timed: the same rows in every framework"
+        }
+      ]
+    },
+    "menu:header:/cart": {
+      "kind": "menu",
+      "why": "a side menu link seen on /, inside a dropdown",
+      "facts": [
+        "menu cart -> CartPage visits /cart"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 42,
+          "fact": "menu cart -> CartPage visits /cart",
+          "why": "a side menu link seen on /, inside a dropdown"
+        }
+      ]
+    },
+    "menu-link:header:/cart": {
+      "kind": "menu-link",
+      "why": "a side menu link seen on /, inside a dropdown; found by its address in the header",
+      "facts": [
+        "menu header N_0_LINK at /cart xpath //a[@href='/cart']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/HeaderElements.java",
+          "line": 14,
+          "fact": "menu header N_0_LINK at /cart xpath //a[@href='/cart']",
+          "why": "a side menu link seen on /, inside a dropdown; found by its address in the header"
+        }
+      ]
+    },
+    "menu:header:/who": {
+      "kind": "menu",
+      "why": "a header link seen on /, inside a dropdown",
+      "facts": [
+        "menu who -> WhoPage visits /who"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 50,
+          "fact": "menu who -> WhoPage visits /who",
+          "why": "a header link seen on /, inside a dropdown"
+        }
+      ]
+    },
+    "menu-link:header:/who": {
+      "kind": "menu-link",
+      "why": "a header link seen on /, inside a dropdown; found by its address in the header",
+      "facts": [
+        "menu header WHO_WE_ARE_LINK at /who xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/who']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/HeaderElements.java",
+          "line": 16,
+          "fact": "menu header WHO_WE_ARE_LINK at /who xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/who']",
+          "why": "a header link seen on /, inside a dropdown; found by its address in the header"
+        }
+      ]
+    },
+    "menu:header:/services": {
+      "kind": "menu",
+      "why": "a header link seen on /, inside a dropdown",
+      "facts": [
+        "menu services -> ServicesPage visits /services"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 58,
+          "fact": "menu services -> ServicesPage visits /services",
+          "why": "a header link seen on /, inside a dropdown"
+        }
+      ]
+    },
+    "menu-link:header:/services": {
+      "kind": "menu-link",
+      "why": "a header link seen on /, inside a dropdown; found by its address in the header",
+      "facts": [
+        "menu header WHAT_WE_DO_LINK at /services xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/services']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/HeaderElements.java",
+          "line": 18,
+          "fact": "menu header WHAT_WE_DO_LINK at /services xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/services']",
+          "why": "a header link seen on /, inside a dropdown; found by its address in the header"
+        }
+      ]
+    },
+    "menu:header:/accomplishments": {
+      "kind": "menu",
+      "why": "a header link seen on /, inside a dropdown",
+      "facts": [
+        "menu accomplishments -> AccomplishmentsPage visits /accomplishments"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 66,
+          "fact": "menu accomplishments -> AccomplishmentsPage visits /accomplishments",
+          "why": "a header link seen on /, inside a dropdown"
+        }
+      ]
+    },
+    "menu-link:header:/accomplishments": {
+      "kind": "menu-link",
+      "why": "a header link seen on /, inside a dropdown; found by its address in the header",
+      "facts": [
+        "menu header OUR_ACCOMPLISHMENTS_LINK at /accomplishments xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/accomplishments']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/HeaderElements.java",
+          "line": 21,
+          "fact": "menu header OUR_ACCOMPLISHMENTS_LINK at /accomplishments xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/accomplishments']",
+          "why": "a header link seen on /, inside a dropdown; found by its address in the header"
+        }
+      ]
+    },
+    "menu:header:/our-work": {
+      "kind": "menu",
+      "why": "a header link seen on /, inside a dropdown",
+      "facts": [
+        "menu ourWork -> OurWorkPage visits /our-work"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 76,
+          "fact": "menu ourWork -> OurWorkPage visits /our-work",
+          "why": "a header link seen on /, inside a dropdown"
+        }
+      ]
+    },
+    "menu-link:header:/our-work": {
+      "kind": "menu-link",
+      "why": "a header link seen on /, inside a dropdown; found by its address in the header",
+      "facts": [
+        "menu header OUR_WORK_LINK at /our-work xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/our-work']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/HeaderElements.java",
+          "line": 24,
+          "fact": "menu header OUR_WORK_LINK at /our-work xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/our-work']",
+          "why": "a header link seen on /, inside a dropdown; found by its address in the header"
+        }
+      ]
+    },
+    "menu:header:/blog": {
+      "kind": "menu",
+      "why": "a header link seen on /, inside a dropdown",
+      "facts": [
+        "menu blog -> BlogPage visits /blog"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 84,
+          "fact": "menu blog -> BlogPage visits /blog",
+          "why": "a header link seen on /, inside a dropdown"
+        }
+      ]
+    },
+    "menu-link:header:/blog": {
+      "kind": "menu-link",
+      "why": "a header link seen on /, inside a dropdown; found by its address in the header",
+      "facts": [
+        "menu header BLOG_LINK at /blog xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/blog']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/HeaderElements.java",
+          "line": 27,
+          "fact": "menu header BLOG_LINK at /blog xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/blog']",
+          "why": "a header link seen on /, inside a dropdown; found by its address in the header"
+        }
+      ]
+    },
+    "menu:header:/contact": {
+      "kind": "menu",
+      "why": "a header link seen on /, inside a dropdown",
+      "facts": [
+        "menu contact -> ContactPage visits /contact"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 92,
+          "fact": "menu contact -> ContactPage visits /contact",
+          "why": "a header link seen on /, inside a dropdown"
+        }
+      ]
+    },
+    "menu-link:header:/contact": {
+      "kind": "menu-link",
+      "why": "a header link seen on /, inside a dropdown; found by its address in the header",
+      "facts": [
+        "menu header CONTACT_US_LINK at /contact xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/contact']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/HeaderElements.java",
+          "line": 29,
+          "fact": "menu header CONTACT_US_LINK at /contact xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/contact']",
+          "why": "a header link seen on /, inside a dropdown; found by its address in the header"
+        }
+      ]
+    },
+    "menu:header:/": {
+      "kind": "menu",
+      "why": "a header link seen on /contact, inside a dropdown",
+      "facts": [
+        "menu home -> HomePage visits /"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/actions/HeaderNavigableActions.java",
+          "line": 100,
+          "fact": "menu home -> HomePage visits /",
+          "why": "a header link seen on /contact, inside a dropdown"
+        }
+      ]
+    },
+    "menu-link:header:/": {
+      "kind": "menu-link",
+      "why": "a header link seen on /contact, inside a dropdown; found by its address in the header",
+      "facts": [
+        "menu header PEREGRINE_ADVISORS_LINK at / xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/']"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/main/java/com/peregrineadvisors/tests/pages/header/HeaderElements.java",
+          "line": 32,
+          "fact": "menu header PEREGRINE_ADVISORS_LINK at / xpath (//header|//nav|//*[@role='banner' or @role='navigation'])//a[@href='/']",
+          "why": "a header link seen on /contact, inside a dropdown; found by its address in the header"
+        }
+      ]
+    },
+    "test:smoke:/": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke HomePage opens 1 of 1 proof loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 43,
+          "fact": "test smoke HomePage opens 1 of 1 proof loaded",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:smoke:/contact": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke ContactPage opens 1 of 1 proof headings"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 49,
+          "fact": "test smoke ContactPage opens 1 of 1 proof headings",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:smoke:/accomplishments": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke AccomplishmentsPage opens 1 of 1 proof headings"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/accomplishments",
+          "snapshot": "crawl/pages/accomplishments.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 55,
+          "fact": "test smoke AccomplishmentsPage opens 1 of 1 proof headings",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:smoke:/cart": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke CartPage opens 1 of 1 proof headings"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/cart",
+          "snapshot": "crawl/pages/cart.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 61,
+          "fact": "test smoke CartPage opens 1 of 1 proof headings",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:smoke:/who": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke WhoPage opens 1 of 1 proof headings"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/who",
+          "snapshot": "crawl/pages/who.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 67,
+          "fact": "test smoke WhoPage opens 1 of 1 proof headings",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:smoke:/services": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke ServicesPage opens 1 of 1 proof headings"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 73,
+          "fact": "test smoke ServicesPage opens 1 of 1 proof headings",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:smoke:/our-work": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke OurWorkPage opens 1 of 1 proof headings"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/our-work",
+          "snapshot": "crawl/pages/our-work.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 79,
+          "fact": "test smoke OurWorkPage opens 1 of 1 proof headings",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:smoke:/blog": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke BlogPage opens 1 of 1 proof headings"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog",
+          "snapshot": "crawl/pages/blog.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 85,
+          "fact": "test smoke BlogPage opens 1 of 1 proof headings",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:smoke:/blog/*": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 3 of 5 crawled examples",
+      "facts": [
+        "test smoke ArticlePage opens 3 of 5 proof loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/srkperegrineadvisorscom",
+          "snapshot": "crawl/pages/blog/srkperegrineadvisorscom.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/ai-and-data-in-government",
+          "snapshot": "crawl/pages/blog/ai-and-data-in-government.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/crypto-task-force",
+          "snapshot": "crawl/pages/blog/crypto-task-force.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 88,
+          "fact": "test smoke ArticlePage opens 3 of 5 proof loaded",
+          "why": "every page type gets a smoke test; it opens 3 of 5 crawled examples"
+        }
+      ]
+    },
+    "test:smoke:/blog/tag/*": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 3 of 8 crawled examples",
+      "facts": [
+        "test smoke TagPage opens 3 of 8 proof loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/BSA%2FAML",
+          "snapshot": "crawl/pages/blog/tag/BSA_AML.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Anti-Money%20Laundering",
+          "snapshot": "crawl/pages/blog/tag/Anti-Money_Laundering.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/AML",
+          "snapshot": "crawl/pages/blog/tag/AML.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 99,
+          "fact": "test smoke TagPage opens 3 of 8 proof loaded",
+          "why": "every page type gets a smoke test; it opens 3 of 8 crawled examples"
+        }
+      ]
+    },
+    "test:smoke:/peregrines-8a": {
+      "kind": "test",
+      "why": "every page type gets a smoke test; it opens 1 of 1 crawled example",
+      "facts": [
+        "test smoke Peregrines8aPage opens 1 of 1 proof headings"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/peregrines-8a",
+          "snapshot": "crawl/pages/peregrines-8a.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 113,
+          "fact": "test smoke Peregrines8aPage opens 1 of 1 proof headings",
+          "why": "every page type gets a smoke test; it opens 1 of 1 crawled example"
+        }
+      ]
+    },
+    "test:navigation:/who#0": {
+      "kind": "test",
+      "why": "a link a visitor can click, seen on /who: \"SBA (8a) Certified\"",
+      "facts": [
+        "test navigation WhoPage() -> Peregrines8aPage() then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/who",
+          "snapshot": "crawl/pages/who.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/NavigationTest.java",
+          "line": 25,
+          "fact": "test navigation WhoPage() -> Peregrines8aPage() then loaded",
+          "why": "a link a visitor can click, seen on /who: \"SBA (8a) Certified\""
+        }
+      ]
+    },
+    "test:navigation:/services#0": {
+      "kind": "test",
+      "why": "a link a visitor can click, seen on /services: \"SBA 8(a) certified business\"",
+      "facts": [
+        "test navigation ServicesPage() -> Peregrines8aPage() then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/services",
+          "snapshot": "crawl/pages/services.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/NavigationTest.java",
+          "line": 31,
+          "fact": "test navigation ServicesPage() -> Peregrines8aPage() then loaded",
+          "why": "a link a visitor can click, seen on /services: \"SBA 8(a) certified business\""
+        }
+      ]
+    },
+    "test:navigation:/blog#0": {
+      "kind": "test",
+      "why": "a link a visitor can click, seen on /blog: \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\"",
+      "facts": [
+        "test navigation BlogPage() -> ArticlePage(\"crypto-task-force\") then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog",
+          "snapshot": "crawl/pages/blog.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/NavigationTest.java",
+          "line": 37,
+          "fact": "test navigation BlogPage() -> ArticlePage(\"crypto-task-force\") then loaded",
+          "why": "a link a visitor can click, seen on /blog: \"THE FUTURE OF CRYPTOCURRENCY REGULATION: A STRATEGIC OVERVIEW\""
+        }
+      ]
+    },
+    "test:navigation:/blog/*#0": {
+      "kind": "test",
+      "why": "a link a visitor can click, seen on /blog/srkperegrineadvisorscom: \"Previous Previous THE EVOLVING LANDSCAPE OF AI AND DATA REGULATION IN THE UNITE…\"",
+      "facts": [
+        "test navigation ArticlePage(\"srkperegrineadvisorscom\") -> ArticlePage(\"ai-and-data-in-government\") then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/srkperegrineadvisorscom",
+          "snapshot": "crawl/pages/blog/srkperegrineadvisorscom.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/NavigationTest.java",
+          "line": 43,
+          "fact": "test navigation ArticlePage(\"srkperegrineadvisorscom\") -> ArticlePage(\"ai-and-data-in-government\") then loaded",
+          "why": "a link a visitor can click, seen on /blog/srkperegrineadvisorscom: \"Previous Previous THE EVOLVING LANDSCAPE OF AI AND DATA REGULATION IN THE UNITE…\""
+        }
+      ]
+    },
+    "test:navigation:/blog/*#1": {
+      "kind": "test",
+      "why": "a link a visitor can click, seen on /blog/srkperegrineadvisorscom: \"AML\"",
+      "facts": [
+        "test navigation ArticlePage(\"srkperegrineadvisorscom\") -> TagPage(\"AML\") then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/srkperegrineadvisorscom",
+          "snapshot": "crawl/pages/blog/srkperegrineadvisorscom.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/NavigationTest.java",
+          "line": 50,
+          "fact": "test navigation ArticlePage(\"srkperegrineadvisorscom\") -> TagPage(\"AML\") then loaded",
+          "why": "a link a visitor can click, seen on /blog/srkperegrineadvisorscom: \"AML\""
+        }
+      ]
+    },
+    "test:navigation:/blog/tag/*#0": {
+      "kind": "test",
+      "why": "a link a visitor can click, seen on /blog/tag/BSA%2FAML: \"AN OVERVIEW OF MODERN MONEY LAUNDERING\"",
+      "facts": [
+        "test navigation TagPage(\"BSA%2FAML\") -> ArticlePage(\"srkperegrineadvisorscom\") then loaded"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/BSA%2FAML",
+          "snapshot": "crawl/pages/blog/tag/BSA_AML.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/NavigationTest.java",
+          "line": 56,
+          "fact": "test navigation TagPage(\"BSA%2FAML\") -> ArticlePage(\"srkperegrineadvisorscom\") then loaded",
+          "why": "a link a visitor can click, seen on /blog/tag/BSA%2FAML: \"AN OVERVIEW OF MODERN MONEY LAUNDERING\""
+        }
+      ]
+    },
+    "test:menu:header:/cart": {
+      "kind": "test",
+      "why": "the side menu link \"0\", hidden, and nothing that opens it was seen: its address is asked",
+      "facts": [
+        "test menu answer /cart"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/MenuTest.java",
+          "line": 29,
+          "fact": "test menu answer /cart",
+          "why": "the side menu link \"0\", hidden, and nothing that opens it was seen: its address is asked"
+        }
+      ]
+    },
+    "test:menu:header:/who": {
+      "kind": "test",
+      "why": "the header link \"Who We Are\", hidden, and nothing that opens it was seen: its address is asked",
+      "facts": [
+        "test menu answer /who"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/MenuTest.java",
+          "line": 35,
+          "fact": "test menu answer /who",
+          "why": "the header link \"Who We Are\", hidden, and nothing that opens it was seen: its address is asked"
+        }
+      ]
+    },
+    "test:menu:header:/services": {
+      "kind": "test",
+      "why": "the header link \"What We Do\", hidden, and nothing that opens it was seen: its address is asked",
+      "facts": [
+        "test menu answer /services"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/MenuTest.java",
+          "line": 41,
+          "fact": "test menu answer /services",
+          "why": "the header link \"What We Do\", hidden, and nothing that opens it was seen: its address is asked"
+        }
+      ]
+    },
+    "test:menu:header:/accomplishments": {
+      "kind": "test",
+      "why": "the header link \"Our Accomplishments\", hidden, and nothing that opens it was seen: its address is asked",
+      "facts": [
+        "test menu answer /accomplishments"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/MenuTest.java",
+          "line": 47,
+          "fact": "test menu answer /accomplishments",
+          "why": "the header link \"Our Accomplishments\", hidden, and nothing that opens it was seen: its address is asked"
+        }
+      ]
+    },
+    "test:menu:header:/our-work": {
+      "kind": "test",
+      "why": "the header link \"Our Work\", hidden, and nothing that opens it was seen: its address is asked",
+      "facts": [
+        "test menu answer /our-work"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/MenuTest.java",
+          "line": 53,
+          "fact": "test menu answer /our-work",
+          "why": "the header link \"Our Work\", hidden, and nothing that opens it was seen: its address is asked"
+        }
+      ]
+    },
+    "test:menu:header:/blog": {
+      "kind": "test",
+      "why": "the header link \"Blog\", hidden, and nothing that opens it was seen: its address is asked",
+      "facts": [
+        "test menu answer /blog"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/MenuTest.java",
+          "line": 59,
+          "fact": "test menu answer /blog",
+          "why": "the header link \"Blog\", hidden, and nothing that opens it was seen: its address is asked"
+        }
+      ]
+    },
+    "test:menu:header:/contact": {
+      "kind": "test",
+      "why": "the header link \"Contact Us\", hidden, and nothing that opens it was seen: its address is asked",
+      "facts": [
+        "test menu answer /contact"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/",
+          "snapshot": "crawl/pages/index.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/MenuTest.java",
+          "line": 65,
+          "fact": "test menu answer /contact",
+          "why": "the header link \"Contact Us\", hidden, and nothing that opens it was seen: its address is asked"
+        }
+      ]
+    },
+    "test:menu:header:/": {
+      "kind": "test",
+      "why": "the header link \"Peregrine Advisors\", hidden, and nothing that opens it was seen: its address is asked",
+      "facts": [
+        "test menu answer /"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/MenuTest.java",
+          "line": 71,
+          "fact": "test menu answer /",
+          "why": "the header link \"Peregrine Advisors\", hidden, and nothing that opens it was seen: its address is asked"
+        }
+      ]
+    },
+    "test:form:/contact:Name": {
+      "kind": "test",
+      "why": "the \"Name\" form the crawl saw: shown and empty; nothing typed or sent",
+      "facts": [
+        "test form ContactPage() empty FIRST_NAME_INPUT, LAST_NAME_INPUT, EMAIL_INPUT, MESSAGE_INPUT shows SEND_BUTTON"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 119,
+          "fact": "test form ContactPage() empty FIRST_NAME_INPUT, LAST_NAME_INPUT, EMAIL_INPUT, MESSAGE_INPUT shows SEND_BUTTON",
+          "why": "the \"Name\" form the crawl saw: shown and empty; nothing typed or sent"
+        }
+      ]
+    },
+    "test:example:/contact": {
+      "kind": "test",
+      "why": "the worked example: its form has the fewest fields of any page's; a plain test written as a person would, nothing sent",
+      "facts": [
+        "test example ContactPage() refuses none fills fillNameForm with Name.sample() holds FIRST_NAME_INPUT, LAST_NAME_INPUT, EMAIL_INPUT, MESSAGE_INPUT"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/contact",
+          "snapshot": "crawl/pages/contact.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/ContactFormTest.java",
+          "line": 31,
+          "fact": "test example ContactPage() refuses none fills fillNameForm with Name.sample() holds FIRST_NAME_INPUT, LAST_NAME_INPUT, EMAIL_INPUT, MESSAGE_INPUT",
+          "why": "the worked example: its form has the fewest fields of any page's; a plain test written as a person would, nothing sent"
+        }
+      ]
+    },
+    "test:list:/blog:ArticlePage": {
+      "kind": "test",
+      "why": "the crawl saw this page link to 3 pages of ArticlePage; it still shows a link to each",
+      "facts": [
+        "test list BlogPage() links-to ArticlePage /blog/crypto-task-force /blog/ai-and-data-in-government /blog/srkperegrineadvisorscom"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog",
+          "snapshot": "crawl/pages/blog.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/SiteTest.java",
+          "line": 29,
+          "fact": "test list BlogPage() links-to ArticlePage /blog/crypto-task-force /blog/ai-and-data-in-government /blog/srkperegrineadvisorscom",
+          "why": "the crawl saw this page link to 3 pages of ArticlePage; it still shows a link to each"
+        }
+      ]
+    },
+    "test:list:/blog/*:TagPage": {
+      "kind": "test",
+      "why": "the crawl saw this page link to 4 pages of TagPage; it still shows a link to each",
+      "facts": [
+        "test list ArticlePage(\"edlc\") links-to TagPage /blog/tag/Data%20Fundamentals /blog/tag/Lifecycle /blog/tag/Data%20Lifecycle /blog/tag/EDLC"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/srkperegrineadvisorscom",
+          "snapshot": "crawl/pages/blog/srkperegrineadvisorscom.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/ai-and-data-in-government",
+          "snapshot": "crawl/pages/blog/ai-and-data-in-government.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/crypto-task-force",
+          "snapshot": "crawl/pages/blog/crypto-task-force.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst",
+          "snapshot": "crawl/pages/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/edlc",
+          "snapshot": "crawl/pages/blog/edlc.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/SiteTest.java",
+          "line": 40,
+          "fact": "test list ArticlePage(\"edlc\") links-to TagPage /blog/tag/Data%20Fundamentals /blog/tag/Lifecycle /blog/tag/Data%20Lifecycle /blog/tag/EDLC",
+          "why": "the crawl saw this page link to 4 pages of TagPage; it still shows a link to each"
+        }
+      ]
+    },
+    "test:one-heading:/blog/*": {
+      "kind": "test",
+      "why": "every page of it the crawl read had one main heading (h1)",
+      "facts": [
+        "test one-heading ArticlePage(\"srkperegrineadvisorscom\")"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/srkperegrineadvisorscom",
+          "snapshot": "crawl/pages/blog/srkperegrineadvisorscom.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/ai-and-data-in-government",
+          "snapshot": "crawl/pages/blog/ai-and-data-in-government.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/crypto-task-force",
+          "snapshot": "crawl/pages/blog/crypto-task-force.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst",
+          "snapshot": "crawl/pages/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/edlc",
+          "snapshot": "crawl/pages/blog/edlc.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/SiteTest.java",
+          "line": 52,
+          "fact": "test one-heading ArticlePage(\"srkperegrineadvisorscom\")",
+          "why": "every page of it the crawl read had one main heading (h1)"
+        }
+      ]
+    },
+    "test:one-heading:/blog/tag/*": {
+      "kind": "test",
+      "why": "every page of it the crawl read had one main heading (h1)",
+      "facts": [
+        "test one-heading TagPage(\"BSA%2FAML\")"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/BSA%2FAML",
+          "snapshot": "crawl/pages/blog/tag/BSA_AML.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Anti-Money%20Laundering",
+          "snapshot": "crawl/pages/blog/tag/Anti-Money_Laundering.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/AML",
+          "snapshot": "crawl/pages/blog/tag/AML.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Data%20Lifecycle",
+          "snapshot": "crawl/pages/blog/tag/Data_Lifecycle.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Money%20Laundering",
+          "snapshot": "crawl/pages/blog/tag/Money_Laundering.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Lifecycle",
+          "snapshot": "crawl/pages/blog/tag/Lifecycle.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/Data%20Fundamentals",
+          "snapshot": "crawl/pages/blog/tag/Data_Fundamentals.html"
+        },
+        {
+          "url": "https://www.peregrineadvisors.com/blog/tag/EDLC",
+          "snapshot": "crawl/pages/blog/tag/EDLC.html"
+        }
+      ],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/SiteTest.java",
+          "line": 60,
+          "fact": "test one-heading TagPage(\"BSA%2FAML\")",
+          "why": "every page of it the crawl read had one main heading (h1)"
+        }
+      ]
+    },
+    "test:not-found:/suite-builder-no-such-page-f7e2d30f": {
+      "kind": "test",
+      "why": "an address that cannot exist, which the crawl asked: answered 404, or a page (a soft 404, filed as a bug)",
+      "facts": [
+        "test not-found /suite-builder-no-such-page-f7e2d30f"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/java/com/peregrineadvisors/tests/cases/GeneratedSmokeTest.java",
+          "line": 130,
+          "fact": "test not-found /suite-builder-no-such-page-f7e2d30f",
+          "why": "an address that cannot exist, which the crawl asked: answered 404, or a page (a soft 404, filed as a bug)"
+        }
+      ]
+    },
+    "ci:github:quick": {
+      "kind": "ci",
+      "why": "on every push and pull request: the link report and every page type opening, in one browser",
+      "facts": [
+        "ci github quick http,smoke in chromium"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": ".github/workflows/suite.yml",
+          "line": 39,
+          "fact": "ci github quick http,smoke in chromium",
+          "why": "on every push and pull request: the link report and every page type opening, in one browser"
+        }
+      ]
+    },
+    "ci:github:full": {
+      "kind": "ci",
+      "why": "when started by hand: every test, in each browser (no nightly run)",
+      "facts": [
+        "ci github full chromium,firefox nightly never"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": ".github/workflows/suite.yml",
+          "line": 67,
+          "fact": "ci github full chromium,firefox nightly never",
+          "why": "when started by hand: every test, in each browser (no nightly run)"
+        }
+      ]
+    },
+    "ci:gitlab:quick": {
+      "kind": "ci",
+      "why": "on every push and pull request: the link report and every page type opening, in one browser",
+      "facts": [
+        "ci gitlab quick http,smoke in chromium"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": ".gitlab-ci.yml",
+          "line": 19,
+          "fact": "ci gitlab quick http,smoke in chromium",
+          "why": "on every push and pull request: the link report and every page type opening, in one browser"
+        }
+      ]
+    },
+    "ci:gitlab:full": {
+      "kind": "ci",
+      "why": "when started by hand: every test, in each browser (no nightly run)",
+      "facts": [
+        "ci gitlab full chromium,firefox nightly never"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": ".gitlab-ci.yml",
+          "line": 42,
+          "fact": "ci gitlab full chromium,firefox nightly never",
+          "why": "when started by hand: every test, in each browser (no nightly run)"
+        }
+      ]
+    },
+    "ci:azure:quick": {
+      "kind": "ci",
+      "why": "on every push and pull request: the link report and every page type opening, in one browser",
+      "facts": [
+        "ci azure quick http,smoke in chromium"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "azure-pipelines.yml",
+          "line": 37,
+          "fact": "ci azure quick http,smoke in chromium",
+          "why": "on every push and pull request: the link report and every page type opening, in one browser"
+        }
+      ]
+    },
+    "ci:azure:full": {
+      "kind": "ci",
+      "why": "when started by hand: every test, in each browser (no nightly run)",
+      "facts": [
+        "ci azure full chromium,firefox nightly never"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "azure-pipelines.yml",
+          "line": 71,
+          "fact": "ci azure full chromium,firefox nightly never",
+          "why": "when started by hand: every test, in each browser (no nightly run)"
+        }
+      ]
+    },
+    "test:link:/": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link / was 200 from /, /contact, /accomplishments"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 3,
+          "fact": "test link / was 200 from /, /contact, /accomplishments",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/contact": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /contact was 200 from /, /contact, /accomplishments"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 4,
+          "fact": "test link /contact was 200 from /, /contact, /accomplishments",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/accomplishments": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /accomplishments was 200 from /, /contact, /accomplishments"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 5,
+          "fact": "test link /accomplishments was 200 from /, /contact, /accomplishments",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/cart": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /cart was 200 from /, /contact, /accomplishments"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 6,
+          "fact": "test link /cart was 200 from /, /contact, /accomplishments",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/who": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /who was 200 from /, /contact, /accomplishments"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 7,
+          "fact": "test link /who was 200 from /, /contact, /accomplishments",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/services": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /services was 200 from /, /contact, /accomplishments"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 8,
+          "fact": "test link /services was 200 from /, /contact, /accomplishments",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/our-work": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /our-work was 200 from /, /contact, /accomplishments"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 9,
+          "fact": "test link /our-work was 200 from /, /contact, /accomplishments",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog was 200 from /, /contact, /accomplishments"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 10,
+          "fact": "test link /blog was 200 from /, /contact, /accomplishments",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/srkperegrineadvisorscom": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/srkperegrineadvisorscom was 200 from /blog, /blog/srkperegrineadvisorscom, /blog/tag/BSA%2FAML"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 11,
+          "fact": "test link /blog/srkperegrineadvisorscom was 200 from /blog, /blog/srkperegrineadvisorscom, /blog/tag/BSA%2FAML",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/tag/BSA%2FAML": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/tag/BSA%2FAML was 200 from /blog/srkperegrineadvisorscom, /blog/tag/BSA%2FAML"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 12,
+          "fact": "test link /blog/tag/BSA%2FAML was 200 from /blog/srkperegrineadvisorscom, /blog/tag/BSA%2FAML",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/ai-and-data-in-government": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/ai-and-data-in-government was 200 from /blog, /blog/srkperegrineadvisorscom, /blog/ai-and-data-in-government"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 13,
+          "fact": "test link /blog/ai-and-data-in-government was 200 from /blog, /blog/srkperegrineadvisorscom, /blog/ai-and-data-in-government",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/tag/Anti-Money%20Laundering": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/tag/Anti-Money%20Laundering was 200 from /blog/srkperegrineadvisorscom, /blog/tag/Anti-Money%20Laundering"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 14,
+          "fact": "test link /blog/tag/Anti-Money%20Laundering was 200 from /blog/srkperegrineadvisorscom, /blog/tag/Anti-Money%20Laundering",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/health-informatics": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 404; the link report holds it to that",
+      "facts": [
+        "test link /health-informatics was 404 from /services, /health-informatics"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 15,
+          "fact": "test link /health-informatics was 404 from /services, /health-informatics",
+          "why": "the crawl requested it and it answered 404; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/crypto-task-force": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/crypto-task-force was 200 from /blog, /blog/ai-and-data-in-government, /blog/crypto-task-force"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 16,
+          "fact": "test link /blog/crypto-task-force was 200 from /blog, /blog/ai-and-data-in-government, /blog/crypto-task-force",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/tag/AML": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/tag/AML was 200 from /blog/srkperegrineadvisorscom, /blog/tag/AML"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 17,
+          "fact": "test link /blog/tag/AML was 200 from /blog/srkperegrineadvisorscom, /blog/tag/AML",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/cxo": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 401; the link report holds it to that",
+      "facts": [
+        "test link /cxo was 401 from /our-work"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 18,
+          "fact": "test link /cxo was 401 from /our-work",
+          "why": "the crawl requested it and it answered 401; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/peregrines-8a": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /peregrines-8a was 200 from /who, /services, /peregrines-8a"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 19,
+          "fact": "test link /peregrines-8a was 200 from /who, /services, /peregrines-8a",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/crypto-dashboard": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 401; the link report holds it to that",
+      "facts": [
+        "test link /crypto-dashboard was 401 from /our-work"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 20,
+          "fact": "test link /crypto-dashboard was 401 from /our-work",
+          "why": "the crawl requested it and it answered 401; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/u6fz5u6th0zm9dlo8fkcqdejooxjst": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/u6fz5u6th0zm9dlo8fkcqdejooxjst was 200 from /blog/srkperegrineadvisorscom, /blog/u6fz5u6th0zm9dlo8fkcqdejooxjst, /blog/edlc"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 21,
+          "fact": "test link /blog/u6fz5u6th0zm9dlo8fkcqdejooxjst was 200 from /blog/srkperegrineadvisorscom, /blog/u6fz5u6th0zm9dlo8fkcqdejooxjst, /blog/edlc",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/edlc": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/edlc was 200 from /blog/u6fz5u6th0zm9dlo8fkcqdejooxjst, /blog/edlc, /blog/tag/Data%20Lifecycle"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 22,
+          "fact": "test link /blog/edlc was 200 from /blog/u6fz5u6th0zm9dlo8fkcqdejooxjst, /blog/edlc, /blog/tag/Data%20Lifecycle",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/tag/Data%20Lifecycle": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/tag/Data%20Lifecycle was 200 from /blog/edlc, /blog/tag/Data%20Lifecycle"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 23,
+          "fact": "test link /blog/tag/Data%20Lifecycle was 200 from /blog/edlc, /blog/tag/Data%20Lifecycle",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/tag/Money%20Laundering": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/tag/Money%20Laundering was 200 from /blog/srkperegrineadvisorscom, /blog/tag/Money%20Laundering"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 24,
+          "fact": "test link /blog/tag/Money%20Laundering was 200 from /blog/srkperegrineadvisorscom, /blog/tag/Money%20Laundering",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/tag/Lifecycle": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/tag/Lifecycle was 200 from /blog/edlc, /blog/tag/Lifecycle"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 25,
+          "fact": "test link /blog/tag/Lifecycle was 200 from /blog/edlc, /blog/tag/Lifecycle",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/tag/Data%20Fundamentals": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/tag/Data%20Fundamentals was 200 from /blog/edlc, /blog/tag/Data%20Fundamentals"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 26,
+          "fact": "test link /blog/tag/Data%20Fundamentals was 200 from /blog/edlc, /blog/tag/Data%20Fundamentals",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:link:/blog/tag/EDLC": {
+      "kind": "test",
+      "why": "the crawl requested it and it answered 200; the link report holds it to that",
+      "facts": [
+        "test link /blog/tag/EDLC was 200 from /blog/edlc, /blog/tag/EDLC"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/links.tsv",
+          "line": 27,
+          "fact": "test link /blog/tag/EDLC was 200 from /blog/edlc, /blog/tag/EDLC",
+          "why": "the crawl requested it and it answered 200; the link report holds it to that"
+        }
+      ]
+    },
+    "test:external:https://www.linkedin.com/company/peregrineadvisors": {
+      "kind": "test",
+      "why": "it answered 403: the site keeps test tools out, so the link report lists it and judges nothing",
+      "facts": [
+        "test external link https://www.linkedin.com/company/peregrineadvisors was 403 barred from /, /contact, /accomplishments"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 3,
+          "fact": "test external link https://www.linkedin.com/company/peregrineadvisors was 403 barred from /, /contact, /accomplishments",
+          "why": "it answered 403: the site keeps test tools out, so the link report lists it and judges nothing"
+        }
+      ]
+    },
+    "test:external:https://twitter.com/trimensionality": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://twitter.com/trimensionality was 200 alive from /, /contact, /accomplishments"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 4,
+          "fact": "test external link https://twitter.com/trimensionality was 200 alive from /, /contact, /accomplishments",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.analytica.net/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://www.analytica.net/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 5,
+          "fact": "test external link https://www.analytica.net/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://aminadconsulting.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://aminadconsulting.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 6,
+          "fact": "test external link https://aminadconsulting.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.acquisconsulting.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://www.acquisconsulting.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 7,
+          "fact": "test external link https://www.acquisconsulting.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://xtrategyllp.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://xtrategyllp.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 8,
+          "fact": "test external link https://xtrategyllp.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.accenture.com/us-en/industries/afs-index": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://www.accenture.com/us-en/industries/afs-index was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 9,
+          "fact": "test external link https://www.accenture.com/us-en/industries/afs-index was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.ics-nett.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://www.ics-nett.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 10,
+          "fact": "test external link https://www.ics-nett.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://ocrglobal.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://ocrglobal.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 11,
+          "fact": "test external link https://ocrglobal.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://edmcouncil.org/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://edmcouncil.org/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 12,
+          "fact": "test external link https://edmcouncil.org/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.dama.org/cpages/home": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://www.dama.org/cpages/home was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 13,
+          "fact": "test external link https://www.dama.org/cpages/home was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://maccharlescounty.com/join-the-mac/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://maccharlescounty.com/join-the-mac/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 14,
+          "fact": "test external link https://maccharlescounty.com/join-the-mac/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://oddball.io/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://oddball.io/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 15,
+          "fact": "test external link https://oddball.io/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://swiftships.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://swiftships.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 16,
+          "fact": "test external link https://swiftships.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://witssolutions.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://witssolutions.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 17,
+          "fact": "test external link https://witssolutions.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.thedataincubator.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://www.thedataincubator.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 18,
+          "fact": "test external link https://www.thedataincubator.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.tovutilms.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://www.tovutilms.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 19,
+          "fact": "test external link https://www.tovutilms.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.metric5.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://www.metric5.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 20,
+          "fact": "test external link https://www.metric5.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://pliantsolutions.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://pliantsolutions.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 21,
+          "fact": "test external link https://pliantsolutions.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.tcg.com/": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://www.tcg.com/ was 200 alive from /who"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 22,
+          "fact": "test external link https://www.tcg.com/ was 200 alive from /who",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.sec.gov/files/2022-ocdo-data-strategy-fy2022-2026.pdf": {
+      "kind": "test",
+      "why": "it answered 403: the site keeps test tools out, so the link report lists it and judges nothing",
+      "facts": [
+        "test external link https://www.sec.gov/files/2022-ocdo-data-strategy-fy2022-2026.pdf was 403 barred from /our-work"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 23,
+          "fact": "test external link https://www.sec.gov/files/2022-ocdo-data-strategy-fy2022-2026.pdf was 403 barred from /our-work",
+          "why": "it answered 403: the site keeps test tools out, so the link report lists it and judges nothing"
+        }
+      ]
+    },
+    "test:external:https://www.sec.gov/data-research/data-visualizations": {
+      "kind": "test",
+      "why": "it answered 403: the site keeps test tools out, so the link report lists it and judges nothing",
+      "facts": [
+        "test external link https://www.sec.gov/data-research/data-visualizations was 403 barred from /our-work"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 24,
+          "fact": "test external link https://www.sec.gov/data-research/data-visualizations was 403 barred from /our-work",
+          "why": "it answered 403: the site keeps test tools out, so the link report lists it and judges nothing"
+        }
+      ]
+    },
+    "test:external:https://www.sba.gov/federal-contracting/contracting-assistance-programs/8a-business-development-program": {
+      "kind": "test",
+      "why": "it answered 200 after the crawl; the link report fails when it is gone",
+      "facts": [
+        "test external link https://www.sba.gov/federal-contracting/contracting-assistance-programs/8a-business-development-program was 200 alive from /peregrines-8a"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 25,
+          "fact": "test external link https://www.sba.gov/federal-contracting/contracting-assistance-programs/8a-business-development-program was 200 alive from /peregrines-8a",
+          "why": "it answered 200 after the crawl; the link report fails when it is gone"
+        }
+      ]
+    },
+    "test:external:https://www.whitehouse.gov/briefing-room/statements-releases/2024/03/28/fact-sheet-vice-president-harris-announces-omb-policy-to-advance-governance-innovation-and-risk-management-in-federal-agencies-use-of-artificial-intelligence/": {
+      "kind": "test",
+      "why": "it answered 404 after the crawl: already broken, listed as known",
+      "facts": [
+        "test external link https://www.whitehouse.gov/briefing-room/statements-releases/2024/03/28/fact-sheet-vice-president-harris-announces-omb-policy-to-advance-governance-innovation-and-risk-management-in-federal-agencies-use-of-artificial-intelligence/ was 404 broken from /blog/u6fz5u6th0zm9dlo8fkcqdejooxjst"
+      ],
+      "evidence": [],
+      "generated": [
+        {
+          "file": "src/test/resources/link-report/external.tsv",
+          "line": 26,
+          "fact": "test external link https://www.whitehouse.gov/briefing-room/statements-releases/2024/03/28/fact-sheet-vice-president-harris-announces-omb-policy-to-advance-governance-innovation-and-risk-management-in-federal-agencies-use-of-artificial-intelligence/ was 404 broken from /blog/u6fz5u6th0zm9dlo8fkcqdejooxjst",
+          "why": "it answered 404 after the crawl: already broken, listed as known"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "tool": "suite-builder",
+  "version": "1.39.0",
+  "generator": {
+    "deterministic": true,
+    "models": "none"
+  },
+  "build": {
+    "commit": "74bf120a38891ceb9b675543a01325036977e861",
+    "branch": "main"
+  },
+  "framework": "playwright",
+  "generatedAt": "2026-11-10T00:39:28.151Z",
+  "command": "suite-builder build https://www.peregrineadvisors.com/",
+  "templates": "crawl/www.peregrineadvisors.com.templates.json",
+  "crawl": "crawl/www.peregrineadvisors.com.crawl.json",
+  "crawlFileSaved": "2026-11-10T00:39:27.824Z",
+  "pages": {
+    "ship": "all",
+    "crawl": "f570d782e61f127e",
+    "signedIn": false,
+    "roles": []
+  },
+  "accounts": [
+    {
+      "role": "user",
+      "file": "secrets/user.login",
+      "environment": [
+        "SUITE_USER_USERNAME",
+        "SUITE_USER_PASSWORD"
+      ],
+      "docked": "<Suite Builder's secrets folder, DOCK.md's last line>/<site>/user.login"
+    },
+    {
+      "role": "admin",
+      "file": "secrets/admin.login",
+      "environment": [
+        "SUITE_ADMIN_USERNAME",
+        "SUITE_ADMIN_PASSWORD"
+      ],
+      "docked": "<Suite Builder's secrets folder, DOCK.md's last line>/<site>/admin.login"
+    }
+  ]
+}
